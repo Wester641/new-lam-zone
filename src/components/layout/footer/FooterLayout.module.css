@@ -1,0 +1,25 @@
+.main {
+  background-color: #1b6392;
+}
+
+.container {
+  display: flex;
+  color: #ebebeb;
+  height: 56px;
+}
+
+@media (min-width: 1240px) {
+  .container {
+    max-width: 1240px;
+    min-width: 1240px;
+    margin: 0 auto;
+  }
+}
+
+/* .item1 {
+  background-color: #94bedc;
+}
+
+.item2 {
+  background-color: #94bedc;
+} */

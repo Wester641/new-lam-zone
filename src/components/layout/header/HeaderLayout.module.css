@@ -1,0 +1,14 @@
+.main {
+  background-color: #1b6392;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 !important;
+  }
+}
+@media (min-width: 768px) {
+  .toolbar {
+    padding: 0 !important;
+  }
+}

@@ -1,15 +1,12 @@
-// import { useState } from 'react';
-// import reactLogo from './assets/react.svg';
-// import viteLogo from '/vite.svg';
 import './App.css';
-import ResponsiveComponent from './components/common/ResponsiveComponent';
+import FooterLayout from './components/layout/footer/FooterLayout';
+import HeaderLayout from './components/layout/header/HeaderLayout';
 
 function App() {
-  // const [count, setCount] = useState(0);
-
   return (
     <>
-      <ResponsiveComponent />
+      <HeaderLayout />
+      <FooterLayout />
     </>
   );
 }
