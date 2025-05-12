@@ -1,0 +1,13 @@
+@import '../../../styles/global.scss';
+
+.bannerImg {
+  width: 100%;
+  padding: clamp(1.5rem, 0.891rem + 1.268vw, 2rem);
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    // padding: clamp(1.5rem, 0.891rem + 1.268vw, 2rem);
+    // border: 1px solid #f70404;
+  }
+}

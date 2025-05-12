@@ -16,7 +16,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { useState } from 'react';
 import { Container } from '@mui/material';
-import styles from './HeaderLayout.module.css';
+import styles from './HeaderLayout.module.scss';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',

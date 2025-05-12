@@ -1,0 +1,30 @@
+@import './variables';
+@import './reset';
+@import './mixins';
+// :root {
+//   font-family: 'Segoe UI', sans-serif;
+//   color: $text-color;
+//   background-color: $background-color;
+// }
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// body {
+//   min-height: 100vh;
+//   @include flex-center;
+//   flex-direction: row;
+//   justify-content: space-between;
+// }
