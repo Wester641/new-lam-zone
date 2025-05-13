@@ -1,0 +1,13 @@
+@use '../../../../src/styles/variables' as *;
+
+.button {
+  background-color: $background-color !important;
+  color: $text-color !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  text-transform: none !important;
+  letter-spacing: 1px !important;
+}
+.popper {
+  height: 100px !important;
+}

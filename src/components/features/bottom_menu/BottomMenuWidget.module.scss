@@ -1,0 +1,54 @@
+@use '../../../../src/styles/variables' as *;
+
+.bottomMenuWidget {
+  background-color: inherit !important;
+  border-bottom: 1px solid $border-color;
+  min-height: 52px !important;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.boxContainer {
+  color: $text-color;
+}
+.boxContainer:nth-child(1) {
+  color: $text-color;
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  color: $text-color-light;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 5px;
+
+  &:hover {
+    cursor: pointer;
+    color: $primary-color;
+  }
+}
+.boxContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.boxContainer:nth-child(3) {
+  gap: 10px;
+  color: $text-color-light;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+
+  &:hover {
+    cursor: pointer;
+    color: $primary-color;
+  }
+}

@@ -1,6 +1,14 @@
-@use './variables' as *;
-@use './reset' as *;
-@use './mixins' as *;
+@forward './variables';
+@forward './reset';
+@forward './mixins';
+
+$primary-color: #1976d2;
+$secondary-color: #424242;
+$background-color: #f5f5f5;
+$text-color: #212121;
+$text-color-light: #5f6c72;
+$border-radius: 8px;
+
 // :root {
 //   font-family: 'Segoe UI', sans-serif;
 //   color: $text-color;

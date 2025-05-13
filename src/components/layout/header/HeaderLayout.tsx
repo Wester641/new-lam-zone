@@ -158,8 +158,8 @@ export default function HeaderLayout() {
   );
 
   return (
-    <Box sx={{ flexGrow: 1, backgroundColor: '#1b6392' }}>
-      <AppBar position="static" sx={{ backgroundColor: '#1b6392' }}>
+    <Box className={styles.firstMainTag}>
+      <AppBar className={styles.secondMainTag}>
         <Container maxWidth="lg" className={styles.container}>
           <Toolbar className={styles.toolbar}>
             <IconButton
@@ -185,7 +185,7 @@ export default function HeaderLayout() {
                 <SearchIcon />
               </SearchIconWrapper>
               <StyledInputBase
-                placeholder="Search…"
+                placeholder="Macbook Pro m1 pro 14..."
                 inputProps={{ 'aria-label': 'search' }}
               />
             </Search>

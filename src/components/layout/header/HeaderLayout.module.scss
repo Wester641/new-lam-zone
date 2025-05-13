@@ -1,5 +1,14 @@
-.main {
-  background-color: #1b6392;
+@use '../../../../src/styles/variables' as *;
+
+.firstMainTag {
+  flex-grow: 1;
+  background-color: $blue-color !important;
+}
+.secondMainTag {
+  position: static !important;
+  background-color: $blue-color !important;
+  padding: 12px 0 !important;
+  box-shadow: none !important;
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,111 @@
+@use '../../../../src/styles/variables' as *;
+
+.blackFridayWidget {
+  background-color: $black-color !important;
+  position: relative !important;
+  box-shadow: none !important;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 768px) and (max-width: 1440px) {
+    justify-content: space-around;
+  }
+  min-height: 80px;
+  // position: relative;
+}
+.blackText {
+  display: inline-block;
+  background-color: #f3de6d;
+  padding: 8px;
+  margin: 0 10px;
+  font-weight: 500;
+  transform: rotate(-4deg);
+  color: $text-color;
+  font-size: 20px;
+  line-height: 1;
+}
+.fridayText {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.blackTypegraphy {
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    max-height: 40px;
+  }
+
+  .secondText {
+    font-size: 40px;
+    color: rgba(235, 200, 12, 1);
+  }
+
+  .shopNow {
+    margin: 0 !important;
+    background-color: #f3de6d;
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: auto 0 !important;
+    color: $text-color;
+  }
+}
+
+.blackTypegraphy:nth-child(2) {
+  display: flex;
+  // flex: 1;
+
+  span {
+    margin: 0 auto !important;
+  }
+
+  .firstText,
+  .secondText,
+  .thirdText {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    height: 60px;
+    padding: 0 5px;
+  }
+  .thirdText {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+
+.blackTypegraphy:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  .closeButton {
+    background-color: #303639;
+    box-sizing: border-box;
+    padding: 3px;
+    border-radius: 2px;
+
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+      scale: 1.05;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
