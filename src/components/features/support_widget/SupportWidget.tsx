@@ -53,24 +53,37 @@ export default function SupportWidget() {
   return (
     <Box sx={{ width: '100%' }}>
       <Container maxWidth="lg" className={styles.supportWidget}>
-        <Grid container spacing={2} columns={16}>
-          {supportContent.map(item => (
-            <Grid size={{ xs: 12, sm: 12, md: 4 }}>
-              <Grid
-                key={item.id}
-                container
-                spacing={2}
-                className={styles.supportItem}
-              >
+        <Grid
+          container
+          spacing={0}
+          columns={16}
+          className={styles.supportContainer}
+        >
+          {supportContent.map((item, index) => (
+            <Grid size={{ xs: 12, sm: 12, md: 4 }} key={item.id}>
+              <Grid container spacing={2} className={styles.supportItem}>
                 <Grid className={styles.supportImg} size={3}>
                   <Item>
-                    <img src={item.image} alt="wgt" />
+                    <img
+                      src={item.image}
+                      alt="wgt"
+                      className={styles.supportImg}
+                    />
                   </Item>
                 </Grid>
-                <Grid size={9}>
+                <Grid
+                  size={9}
+                  className={
+                    index === 3
+                      ? styles.supportContentNoBorder
+                      : styles.supportContent
+                  }
+                >
                   <Stack spacing={2}>
-                    <Item>{item.title}</Item>
-                    <Item>{item.description}</Item>
+                    <h3 className={styles.supportTitle}>{item.title}</h3>
+                    <p className={styles.supportDescription}>
+                      {item.description}
+                    </p>
                   </Stack>
                 </Grid>
               </Grid>

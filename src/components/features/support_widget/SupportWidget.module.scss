@@ -2,7 +2,7 @@
 
 .supportWidget {
   width: 100%;
-  max-height: 108px;
+  // max-height: 108px;
   margin-bottom: clamp(1.5rem, 0.891rem + 1.268vw, 2rem);
   img {
     object-fit: cover;
@@ -11,16 +11,36 @@
     display: none;
   }
 }
-.supportItem {
+.supportContainer {
   border: 1px solid #e4e7e9;
 }
 
+.supportContent {
+  margin: auto 0 !important;
+  border-right: 1px solid #e4e7e9;
+}
+
+.supportContentNoBorder {
+  margin: auto 0 !important;
+  border: none !important;
+}
+
+.supportItem {
+  box-sizing: border-box;
+  padding: 20px;
+}
 .supportImg {
   margin: auto 0;
+  min-width: 100%;
 }
-.supportContent {
-  text-align: start;
-}
+
 .supportTitle {
-  font-weight: 600;
+  color: $text-color;
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.supportDescription {
+  color: $text-color-light;
+  margin: 0 !important;
 }

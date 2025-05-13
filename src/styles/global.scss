@@ -1,6 +1,6 @@
-@import './variables';
-@import './reset';
-@import './mixins';
+@use './variables' as *;
+@use './reset' as *;
+@use './mixins' as *;
 // :root {
 //   font-family: 'Segoe UI', sans-serif;
 //   color: $text-color;
