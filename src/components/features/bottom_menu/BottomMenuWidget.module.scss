@@ -1,54 +1,135 @@
 @use '../../../../src/styles/variables' as *;
+@use '../../../../src/styles/mixins' as *;
 
 .bottomMenuWidget {
-  background-color: inherit !important;
+  @include flex-center;
   border-bottom: 1px solid $border-color;
-  min-height: 52px !important;
-  display: flex;
-  // justify-content: center;
-  align-items: center;
-}
-.container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.boxContainer {
   color: $text-color;
-}
-.boxContainer:nth-child(1) {
-  color: $text-color;
-  display: flex;
-  align-items: center;
-}
+  min-height: 50px;
 
-.box {
-  color: $text-color-light;
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  gap: 5px;
-
-  &:hover {
-    cursor: pointer;
-    color: $primary-color;
+  @media (min-width: 768px) {
+    min-height: 70px;
   }
 }
-.boxContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-.boxContainer:nth-child(3) {
-  gap: 10px;
-  color: $text-color-light;
-  font-size: 18px !important;
-  font-weight: 500 !important;
+// .grid {
+//   @include flex-center;
+// }
+.gridItems {
+  @include flex-center;
 
-  &:hover {
-    cursor: pointer;
-    color: $primary-color;
+  // Item 1
+  &:nth-child(1) {
+    justify-content: center;
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  // Item 2
+  &:nth-child(2) {
+    justify-content: start;
+    gap: 24px;
+
+    // Item 1
+    &:nth-child(1) {
+      justify-content: center;
+      display: none;
+
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+
+    // Item 2
+    &:nth-child(2) {
+      .boxContainer {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        gap: clamp(6px, 2vw, 24px);
+        width: 100%;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        & {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+
+        @media (min-width: 768px) {
+          overflow-x: hidden;
+          justify-content: start;
+        }
+
+        @media (max-width: 430px) {
+          gap: 10px;
+        }
+
+        div.box {
+          color: $gray-600 !important;
+          @include flex-center;
+          font-size: clamp(0.75rem, 2.5vw, 1rem) !important;
+          flex-shrink: 0;
+          min-width: 100px;
+          gap: 5px;
+
+          @media (max-width: 375px) {
+            font-size: 0.75rem !important;
+            min-width: 80px;
+          }
+
+          svg {
+            font-size: clamp(1rem, 3vw, 1.25rem) !important;
+            @media (max-width: 375px) {
+              font-size: 1rem !important;
+            }
+          }
+
+          &:hover {
+            cursor: pointer;
+            scale: 1.05 !important;
+            color: $blue-color !important;
+          }
+        }
+      }
+    }
+  }
+  // Item 3
+  &:nth-child(3) {
+    gap: 24px;
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+    div {
+      @include flex-center;
+      gap: 5px;
+      cursor: pointer;
+
+      .callUsNow {
+        font-size: clamp(
+          0.875rem,
+          3vw,
+          $base-font-size
+        ) !important; // 14px-16px
+
+        @media (max-width: 430px) {
+          font-size: 0.875rem !important; // 14px для 375px
+        }
+      }
+
+      &:hover {
+        scale: 1.05 !important;
+        color: $blue-color !important;
+      }
+    }
   }
 }

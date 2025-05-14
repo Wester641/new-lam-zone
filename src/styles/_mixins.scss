@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 @mixin flex-center {
   display: flex;
   justify-content: center;
@@ -6,4 +8,8 @@
 
 @mixin transition($prop...) {
   transition: $prop 0.3s ease;
+}
+
+@mixin border {
+  border: 1px solid $border-color;
 }

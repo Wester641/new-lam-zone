@@ -23,6 +23,7 @@ $border-radius: 8px;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #ffffff;
+  padding: 0 !important;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,9 +31,7 @@ $border-radius: 8px;
   -moz-osx-font-smoothing: grayscale;
 }
 
-// body {
-//   min-height: 100vh;
-//   @include flex-center;
-//   flex-direction: row;
-//   justify-content: space-between;
-// }
+body {
+  // padding: 0 !important;
+  // margin: 0 !important;
+}
