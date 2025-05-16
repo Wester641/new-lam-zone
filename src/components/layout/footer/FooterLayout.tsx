@@ -3,6 +3,8 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Grid } from '@mui/material';
+import logo from '../../../assets/icons/logo.png';
+import styles from './FooterLayout.module.scss';
 // Replace these with your own social media URLs
 const socialMediaLinks = {
   facebook: '#',
@@ -22,11 +24,8 @@ const FooterLayout: React.FC = () => {
     >
       <Container maxWidth="lg">
         <Grid container spacing={2} justifyContent="space-between">
-          <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-            <Typography variant="h6" color="white" gutterBottom>
-              L&M
-            </Typography>
-            {/* Add your logo component or image here */}
+          <Grid size={{ xs: 12, sm: 6, md: 3 }} className={styles.gridItem}>
+            <img src={logo} alt="logo" />
           </Grid>
           <Grid size={{ xs: 6, sm: 3, md: 2 }}>
             <Typography variant="subtitle1" color="white" gutterBottom>

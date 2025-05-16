@@ -29,6 +29,10 @@
     width: 1.25rem !important;
     height: 1.25rem !important;
   }
+  @media (max-width: 768px) {
+    right: 14px;
+    position: absolute;
+  }
   @media (min-width: 768px) {
     right: 24px;
     position: absolute;

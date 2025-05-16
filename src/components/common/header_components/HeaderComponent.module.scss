@@ -1,0 +1,38 @@
+@use '../../../../src/styles/variables' as *;
+@use '../../../../src/styles/mixins' as *;
+
+.secondMainTag {
+  position: static !important;
+  background-color: $blue-color !important;
+  box-shadow: none !important;
+  position: relative;
+}
+
+.gridItem {
+  // @include border;
+  @include flex-center;
+
+  &:nth-child(1) {
+    @include flex-center;
+    justify-content: flex-start;
+    img {
+      width: 100px;
+      padding: 20px 0;
+
+      @media (max-width: 430px) {
+        width: 50px;
+      }
+    }
+  }
+  // Mobile Navigation
+  &:nth-child(2) {
+    position: relative;
+    right: 25px;
+    // @include flex-center;
+  }
+
+  &:nth-child(3) {
+    @include flex-center;
+    justify-content: flex-end;
+  }
+}

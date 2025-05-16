@@ -30,7 +30,7 @@ export const MobileNavigation = () => {
         aria-label="open drawer"
         edge="start"
         onClick={toggleDrawer(true)}
-        sx={{ display: { xs: 'block', md: 'none' } }}
+        // sx={{ display: { xs: 'block', md: 'none' } }}
       >
         <MenuIcon />
       </IconButton>
@@ -39,7 +39,7 @@ export const MobileNavigation = () => {
         <Box sx={{ width: 250, p: 2 }}>
           <TextField
             fullWidth
-            label="Поиск"
+            label="Search Macbook..."
             variant="outlined"
             value={searchQuery}
             onChange={handleSearchChange}

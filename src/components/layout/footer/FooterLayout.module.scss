@@ -16,6 +16,15 @@
   }
 }
 
+.gridItem {
+  img {
+    width: 100px;
+
+    @media (max-width: 430px) {
+      width: 70px;
+    }
+  }
+}
 /* .item1 {
   background-color: #94bedc;
 }
