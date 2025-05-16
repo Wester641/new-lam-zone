@@ -21,7 +21,7 @@ export default function BlackFridayWidget() {
             <span className={styles.secondText}> 59%</span>
             <span className={styles.thirdText}>OFF</span>
           </Grid>
-          <Grid size={{ sm: 5, md: 4 }} className={styles.gridItems}>
+          <Grid size={{ sm: 5, md: 3 }} className={styles.gridItems}>
             <Button
               variant="outlined"
               className={styles.shopNow}
@@ -30,9 +30,11 @@ export default function BlackFridayWidget() {
               <span>Shop Now</span>
             </Button>
           </Grid>
+          <Grid size={{ sm: 2, md: 1 }} className={styles.gridItems}>
+            <Close className={styles.closeButton} />
+          </Grid>
         </Grid>
       </Container>
-      <Close className={styles.closeButton} />
     </Box>
   );
 }

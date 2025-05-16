@@ -6,12 +6,10 @@
   position: relative !important;
   border-bottom: 1px solid $border-color2;
   box-shadow: none !important;
-  // margin: auto 0 !important;
 }
 
 .gridItem {
   @include flex-center;
-  // @include border;
   margin: auto 0;
   min-height: 52px !important;
   justify-content: center;
@@ -52,35 +50,3 @@
     min-height: 32px !important;
   }
 }
-
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// .container {
-//   display: flex;
-//   // min-width: 100%;
-//   align-items: center;
-//   min-height: 100%;
-//   justify-content: space-between;
-// }
-
-// .boxText {
-//   span {
-//     font-size: 14px;
-//   }
-// }
-// .boxText:nth-child(2) {
-//   display: flex;
-//   align-items: center;
-//   gap: 10px;
-//   justify-content: center;
-//   .social {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 5px;
-//     cursor: pointer;
-//   }
-// }

@@ -1,0 +1,11 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.homePage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.grid {
+  flex: 1;
+}

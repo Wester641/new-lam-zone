@@ -1,24 +1,25 @@
-import Banner from '../components/common/banner/Banner';
-import BlackFridayWidget from '../components/features/black_friday/BlackFridayWidget';
-import BottomMenuWidget from '../components/features/bottom_menu/BottomMenuWidget';
-import SocialItemsWidget from '../components/features/social_items_header/SocialItemsWidget';
-import SupportWidget from '../components/features/support_widget/SupportWidget';
+import { Box, Grid } from '@mui/material';
 import FooterLayout from '../components/layout/footer/FooterLayout';
 import HeaderLayout from '../components/layout/header/HeaderLayout';
+import styles from './HomePage.module.scss';
 
 function HomePage() {
   return (
-    <>
-      <BlackFridayWidget />
-      <SocialItemsWidget />
+    <Box className={styles.homePage}>
       <HeaderLayout />
-      <BottomMenuWidget />
-      <Banner />
-      <SupportWidget />
-      <Banner />
+      <Grid container direction="column" className={styles.grid}>
+        <Grid
+          size={{ xs: 12, sm: 12, md: 12 }}
+          className={styles.gridItem}
+        ></Grid>
+
+        <Grid size={{ xs: 12, sm: 12, md: 12 }} className={styles.gridItem}>
+          {/* <Banner />
+          <SupportWidget /> */}
+        </Grid>
+      </Grid>
       <FooterLayout />
-    </>
+    </Box>
   );
 }
-
 export default HomePage;
