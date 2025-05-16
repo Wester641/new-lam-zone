@@ -26,7 +26,7 @@ export default function Banner() {
         <Container maxWidth="lg" className={styles.bannerImg}>
           <Grid container spacing={2}>
             <Grid size={{ xs: 12, sm: 12, md: 8 }}>
-              <Box sx={{ height: '100%', minHeight: 400 }}>
+              <Box className={styles.sliderContainer}>
                 <SliderImage />
               </Box>
             </Grid>
