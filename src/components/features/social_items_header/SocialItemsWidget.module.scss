@@ -39,10 +39,8 @@
       gap: 8px;
 
       svg {
-        @media (max-width: 430px) {
-          width: 18px;
-          height: 18px;
-        }
+        width: 18px;
+        height: 18px;
       }
 
       svg:hover {
