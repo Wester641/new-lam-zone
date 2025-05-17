@@ -24,11 +24,7 @@ export default function HeaderComponent() {
               >
                 <MobileNavigation />
               </Grid>
-              <Grid
-                size={{ xs: 4, sm: 6, md: 6 }}
-                // sx={{ display: { xs: 'none' } }}
-                className={styles.gridItem}
-              >
+              <Grid size={{ xs: 4, sm: 6, md: 6 }} className={styles.gridItem}>
                 <IconButtons />
               </Grid>
             </Grid>

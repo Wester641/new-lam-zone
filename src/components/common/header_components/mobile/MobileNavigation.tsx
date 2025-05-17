@@ -48,7 +48,7 @@ export const MobileNavigation = () => {
           <Divider sx={{ my: 2 }} />
 
           <List>
-            {['Главная', 'Каталог', 'Контакты', 'О нас'].map(text => (
+            {['Home', 'Catalogue', 'Cart', 'About Us'].map(text => (
               <ListItemButton key={text} onClick={toggleDrawer(false)}>
                 <ListItemText primary={text} />
               </ListItemButton>
