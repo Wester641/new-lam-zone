@@ -1,5 +1,5 @@
-@use '../../../../src/styles/variables' as *;
-@use '../../../../src/styles/mixins' as *;
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/mixins' as *;
 
 // .secondMainTag {
 //   position: static !important;
@@ -11,3 +11,10 @@
 //   @include border;
 //   @include flex-center;
 // }
+
+.link {
+  color: $white-color;
+}
+.active {
+  color: $yellow-color;
+}

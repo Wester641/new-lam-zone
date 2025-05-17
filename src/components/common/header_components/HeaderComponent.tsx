@@ -5,6 +5,7 @@ import styles from './HeaderComponent.module.scss';
 import { MobileNavigation } from './mobile/MobileNavigation';
 import IconButtons from './icon_buttons/IconButtons';
 import logo from '../../../assets/icons/logo1.png';
+import { NavLink } from 'react-router-dom';
 
 export default function HeaderComponent() {
   return (
@@ -14,7 +15,9 @@ export default function HeaderComponent() {
           <Container maxWidth="lg" className={styles.container}>
             <Grid container alignItems="center">
               <Grid size={{ xs: 4, sm: 5, md: 6 }} className={styles.gridItem}>
-                <img src={logo} alt="logo" />
+                <NavLink to={'/'}>
+                  <img src={logo} alt="logo" />
+                </NavLink>
               </Grid>
               <Grid
                 sx={{ display: { xs: 'block', md: 'none' } }}
