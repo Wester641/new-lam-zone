@@ -10,7 +10,7 @@ function HomePage() {
     <Box className={styles.homePage}>
       <HeaderLayout />
       <MobileBottomNavigation />
-      <Container maxWidth="lg" className={styles.grid}>
+      <Container className={styles.grid}>
         <Banner />
       </Container>
       <FooterLayout />
