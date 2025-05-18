@@ -11,16 +11,16 @@ import SliderImage from '../slider_image/SliderImage';
 export default function Banner() {
   return (
     <>
-      <Grid container spacing={1}>
-        <Grid size={{ xs: 12, sm: 12, md: 8 }}>
-          <Box className={styles.sliderContainer}>
+      <Grid container spacing={1} sx={{ backgroundColor: '#F2F4F5' }}>
+        <Grid size={{ xs: 12, sm: 12, md: 8 }} className={styles.gridItem}>
+          <Box className={styles.bannerImg}>
             <SliderImage />
           </Box>
         </Grid>
-        <Grid size={{ xs: 12, sm: 12, md: 4 }}>
+        <Grid size={{ xs: 12, sm: 12, md: 4 }} className={styles.gridItem}>
           <Stack spacing={1}>
-            <img src={WidgetImg1} alt="wgt" />
-            <img src={WidgetImg2} alt="wgt" />
+            <img src={WidgetImg1} loading="lazy" alt="wgt" />
+            <img src={WidgetImg2} loading="lazy" alt="wgt" />
           </Stack>
         </Grid>
       </Grid>

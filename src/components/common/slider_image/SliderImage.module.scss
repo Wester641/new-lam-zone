@@ -3,7 +3,9 @@
 
 .sliderContainer {
   width: 100%;
+  // @include border;
   height: 100%;
+  // margin: 0 auto;
 
   :global(.slick-slider),
   :global(.slick-list),
@@ -11,28 +13,25 @@
   :global(.slick-slide > div) {
     height: 100%;
   }
-  :global(.slick-dots) {
-    bottom: 10px;
-  }
+  // :global(.slick-dots) {
+  //   // bottom: 0px;
+  // }
 }
 :global(.slick-arrow) {
   display: none !important;
 }
 
 .slide {
+  color: $text-color;
   max-height: 400px;
   background-color: inherit;
-  // background-color: $bg-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // @include border;
   @include flex-center;
+  flex-direction: column;
 
   img {
-    // border-radius: 10px;
-    width: 100%;
-    height: 100%;
+    margin: 0 auto;
+    width: 40%;
+    height: 50%;
     object-fit: cover;
   }
 }

@@ -1,24 +1,17 @@
 @use '../../../../src/styles/variables' as *;
 @use '../../../../src/styles/mixins' as *;
 
-.bannerImg {
-  width: 100%;
-  padding: clamp(1.5rem, 0.891rem + 1.268vw, 2rem);
-
-  @media (max-width: 768px) {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    // padding: clamp(1.5rem, 0.891rem + 1.268vw, 2rem);
-    // border: 1px solid #f70404;
-  }
+.container {
+  background-color: $banner-bg-color;
 }
-// .sliderContainer {
-//   // max-height: 400px;
-//   width: 100%;
-// }
+
+.gridItem {
+  &:nth-child(1) {
+    // border: 1px solid #f70404;
+    padding: 3px;
+    margin: auto 0;
+    // background-color: $banner-bg-color;
+  }
+
+  // background-color: $banner-bg-color;
+}
