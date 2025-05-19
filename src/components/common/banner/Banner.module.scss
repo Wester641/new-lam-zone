@@ -1,17 +1,73 @@
 @use '../../../../src/styles/variables' as *;
 @use '../../../../src/styles/mixins' as *;
 
-.container {
-  background-color: $banner-bg-color;
-}
-
 .gridItem {
   &:nth-child(1) {
-    // border: 1px solid #f70404;
     padding: 3px;
     margin: auto 0;
-    // background-color: $banner-bg-color;
+  }
+}
+
+.boxContainer {
+  position: relative;
+  overflow: hidden;
+  min-height: 250px;
+
+  &:nth-child(1) {
+    background-color: black !important;
+  }
+}
+
+.container {
+  background-color: $banner-bg-color;
+  @include flex-center;
+  flex-direction: column;
+  align-items: start;
+  position: absolute;
+  background-color: transparent;
+  z-index: 1000;
+  box-sizing: border-box;
+  padding: 0 0 0 20px;
+  bottom: 50px;
+
+  @media (max-width: 430px) {
+    bottom: 30px;
   }
 
-  // background-color: $banner-bg-color;
+  &:nth-child(2) {
+    position: absolute;
+    left: 185px !important;
+  }
+}
+
+.text {
+  margin-bottom: 10px;
+  font-size: clamp(1.25rem, 1.5rem, 1.5rem);
+  font-weight: 600;
+  @media (max-width: 430px) {
+    font-size: 1.25rem;
+  }
+}
+.divider {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $yellow-color;
+
+  @media (max-width: 430px) {
+    font-size: 0.875rem;
+  }
+}
+
+img {
+  width: 100%;
+}
+.widgetImage {
+  width: 60%;
+  position: relative;
+  left: 150px;
+}
+
+.container_bottom {
+  @include flex-center;
+  flex-direction: column;
 }
