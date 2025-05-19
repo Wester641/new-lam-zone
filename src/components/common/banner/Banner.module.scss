@@ -14,7 +14,10 @@
   min-height: 250px;
 
   &:nth-child(1) {
-    background-color: black !important;
+    background-color: $black-color !important;
+  }
+  &:nth-child(2) {
+    color: $text-color !important;
   }
 }
 
@@ -37,6 +40,7 @@
   &:nth-child(2) {
     position: absolute;
     left: 185px !important;
+    gap: 10px;
   }
 }
 
@@ -44,10 +48,16 @@
   margin-bottom: 10px;
   font-size: clamp(1.25rem, 1.5rem, 1.5rem);
   font-weight: 600;
+
   @media (max-width: 430px) {
     font-size: 1.25rem;
   }
 }
+
+.textHeadphones {
+  color: $text-color !important;
+}
+
 .divider {
   font-weight: 600;
   text-transform: uppercase;
@@ -67,7 +77,6 @@ img {
   left: 150px;
 }
 
-.container_bottom {
-  @include flex-center;
-  flex-direction: column;
+.price {
+  color: $primary-color;
 }
