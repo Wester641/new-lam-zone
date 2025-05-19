@@ -1,33 +1,33 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import styles from './SliderImage.module.scss';
-
-import image1 from '../../../assets/images/Image.png';
-import image2 from '../../../assets/images/Image1.png';
-import image3 from '../../../assets/images/Image2.png';
-import ButtonComponent from '../button/Button';
 import { Grid } from '@mui/material';
-// import image4 from '../../../assets/images/Image3.png';
+import styles from './SliderImage.module.scss';
+import ButtonComponent from '../button/Button';
+
+// import image1 from '../../../assets/images/slider_images/bgiphone.png';;
+import iphone from '../../../assets/images/slider_images/bgiphone.png';
+import ps5 from '../../../assets/images/slider_images/ps5.jpg';
 
 const images = [
   {
-    image: image1,
+    image: ps5,
     name: 'Xbox Consoles',
     title: '- THE BEST PLACE TO PLAY',
     description:
       'Save up to 50% on select Xbox games. Get 3 months of PC Game Pass for $2 USD.',
   },
   {
-    image: image2,
+    image: iphone,
     name: 'iPhone 16 Pro Max',
     title: '- THE BEST PLACE TO PLAY',
     description:
       'Save up to 50% on select Xbox games. Get 3 months of PC Game Pass for $2 USD.',
   },
   {
-    image: image3,
-    name: 'LG OLED 4K',
+    image:
+      'https://res.cloudinary.com/dx2cycu19/image/upload/v1747591248/air1_jgyucc.jpg',
+    name: 'Macbook Air 13',
     title: '- THE BEST PLACE TO PLAY',
     description:
       'Save up to 50% on select Xbox games. Get 3 months of PC Game Pass for $2 USD.',
