@@ -54,8 +54,11 @@
   }
 }
 
-.textHeadphones {
-  color: $text-color !important;
+.price {
+  color: $primary-color !important;
+  font-size: clamp(1.25rem, 1.5rem, 1.5rem);
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .divider {
@@ -75,8 +78,4 @@ img {
   width: 60%;
   position: relative;
   left: 150px;
-}
-
-.price {
-  color: $primary-color;
 }

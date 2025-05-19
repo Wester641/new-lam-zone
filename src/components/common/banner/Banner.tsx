@@ -37,10 +37,10 @@ export default function Banner() {
             </Box>
             <Box className={styles.boxContainer}>
               <div className={styles.container}>
-                <span className={styles.textHeadphones}>
-                  Sony Headphone <br /> Ultra 21
+                <span className={styles.text}>
+                  Sony Headphones <br /> Ultra 21
                 </span>
-                <span className={styles.price}>$250 USD</span>
+                <span className={styles.price}>$250</span>
                 <ButtonComponent />
               </div>
               <div className={styles.img}>
