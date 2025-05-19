@@ -6,20 +6,31 @@ import styles from './SliderImage.module.scss';
 import image1 from '../../../assets/images/Image.png';
 import image2 from '../../../assets/images/Image1.png';
 import image3 from '../../../assets/images/Image2.png';
+import ButtonComponent from '../button/Button';
+import { Grid } from '@mui/material';
 // import image4 from '../../../assets/images/Image3.png';
 
 const images = [
   {
     image: image1,
-    title: 'Macbook Air 13 256 M1 Midnight 3',
+    name: 'Xbox Consoles',
+    title: '- THE BEST PLACE TO PLAY',
+    description:
+      'Save up to 50% on select Xbox games. Get 3 months of PC Game Pass for $2 USD.',
   },
   {
     image: image2,
-    title: 'Macbook Air 13 256 M2 Midnight 5',
+    name: 'iPhone 16 Pro Max',
+    title: '- THE BEST PLACE TO PLAY',
+    description:
+      'Save up to 50% on select Xbox games. Get 3 months of PC Game Pass for $2 USD.',
   },
   {
     image: image3,
-    title: 'Macbook Air 13 256 M3 Midnight 7',
+    name: 'LG OLED 4K',
+    title: '- THE BEST PLACE TO PLAY',
+    description:
+      'Save up to 50% on select Xbox games. Get 3 months of PC Game Pass for $2 USD.',
   },
 ];
 
@@ -38,12 +49,17 @@ export default function SliderImage() {
     <div className={styles.sliderContainer}>
       <Slider {...settings}>
         {images.map((banner, index) => (
-          <div key={index} className={styles.slide}>
-            <div>{banner.title}</div>
-            <div>
+          <Grid container key={index} className={styles.slide}>
+            <Grid size={{ xs: 12, sm: 12, md: 6 }} className={styles.gridItems}>
+              <span className={styles.title}>{banner.title}</span>
+              <h2 className={styles.name}>{banner.name}</h2>
+              <span className={styles.description}>{banner.description}</span>
+              <ButtonComponent />
+            </Grid>
+            <Grid size={{ xs: 12, sm: 12, md: 6 }} className={styles.gridItems}>
               <img src={banner.image} loading="lazy" alt="" />
-            </div>
-          </div>
+            </Grid>
+          </Grid>
         ))}
       </Slider>
     </div>

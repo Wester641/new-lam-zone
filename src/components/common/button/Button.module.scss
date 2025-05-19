@@ -1,0 +1,26 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.button {
+  @include flex-center;
+  width: 170px;
+  height: 50px;
+  background-color: $orange-color !important;
+  border-radius: 2px !important;
+  box-shadow: none;
+  color: $white-color;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.25rem;
+  font-weight: 600 !important;
+  transition: all 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: 430px) {
+    width: 145px !important;
+    height: 45px !important;
+  }
+}
