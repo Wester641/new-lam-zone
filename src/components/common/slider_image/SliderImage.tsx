@@ -5,32 +5,31 @@ import { Grid } from '@mui/material';
 import styles from './SliderImage.module.scss';
 import ButtonComponent from '../button/Button';
 
-// import image1 from '../../../assets/images/slider_images/bgiphone.png';;
+import mac from '../../../assets/images/slider_images/mac.png';
 import iphone from '../../../assets/images/slider_images/bgiphone.png';
 import ps5 from '../../../assets/images/slider_images/ps5.jpg';
 
 const images = [
   {
     image: ps5,
-    name: 'Xbox Consoles',
-    title: '- THE BEST PLACE TO PLAY',
+    name: 'PlayStation 5',
+    title: '- Experience the Future of Gaming Like Never Before',
     description:
-      'Save up to 50% on select Xbox games. Get 3 months of PC Game Pass for $2 USD.',
+      'Dive into ultra-realistic graphics, lightning-fast load times, and immersive gameplay. Upgrade now and unlock a new level of gaming with exclusive deals for a limited time!',
   },
   {
     image: iphone,
     name: 'iPhone 16 Pro Max',
-    title: '- THE BEST PLACE TO PLAY',
+    title: '- Power in Your Hands, Elegance in Every Detail',
     description:
-      'Save up to 50% on select Xbox games. Get 3 months of PC Game Pass for $2 USD.',
+      'Capture life with a professional-grade camera, experience seamless performance with the A18 chip, and stay ahead with next-gen features.',
   },
   {
-    image:
-      'https://res.cloudinary.com/dx2cycu19/image/upload/v1747591248/air1_jgyucc.jpg',
-    name: 'Macbook Air 13',
-    title: '- THE BEST PLACE TO PLAY',
+    image: mac,
+    name: 'Macbook Pro 14',
+    title: '- Next-Level Performance in a Featherlight Design',
     description:
-      'Save up to 50% on select Xbox games. Get 3 months of PC Game Pass for $2 USD.',
+      'Whether you’re working, creating, or relaxing — the new Macbook Pro delivers silent power, stunning Retina display, and all-day battery life.',
   },
 ];
 

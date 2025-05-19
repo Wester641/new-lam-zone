@@ -50,7 +50,12 @@
     @media (max-width: 768px) {
       padding-right: 30px;
       padding-top: 30px;
-      padding-bottom: 30px;
+      padding-bottom: 10px;
+    }
+  }
+  &:nth-child(2) {
+    @media (max-width: 768px) {
+      order: -1 !important;
     }
   }
 }
