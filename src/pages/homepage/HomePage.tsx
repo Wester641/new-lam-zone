@@ -22,4 +22,5 @@ function HomePage() {
     </Box>
   );
 }
+
 export default HomePage;

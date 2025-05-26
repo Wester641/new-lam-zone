@@ -4,20 +4,20 @@ import styles from './ProductCard.module.scss';
 interface ProductCardProps {
   image: string;
   title: string;
-  oldPrice: number;
+  state?: string;
   price: number;
 }
 
-function ProductCard({ image, title, oldPrice, price }: ProductCardProps) {
+function ProductCard({ image, title, price, state }: ProductCardProps) {
   return (
     <Card className={styles.productCard}>
+      {state && <div className={styles.state}>{state}</div>}
       <Box className={styles.productCardImage}>
         <img src={image} alt={title} />
       </Box>
       <Box className={styles.productCardInfo}>
         <span>{title}</span>
-        <span>Old Price: {oldPrice}</span>
-        <span>Price: {price}</span>
+        <span>${price}</span>
       </Box>
     </Card>
   );

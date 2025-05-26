@@ -1,8 +1,7 @@
 @use '../../../../src/styles/variables' as *;
 @use '../../../../src/styles/mixins' as *;
 
-.productCard {
-  min-height: 320px;
+.priorityProduct {
   color: $text-color;
   @include border;
   @include flex-center;
@@ -12,50 +11,33 @@
   box-shadow: none !important;
   position: relative;
   border-radius: 0;
+  height: 100%;
 
-  .productCardInfo {
+  .priorityProductInfo {
     @include flex-center;
     flex: 1;
     align-items: start;
+    justify-content: start;
     flex-direction: column;
-    padding: 0px 14px;
+  
     gap: 8px;
-
-    @media (max-width: 430px) {
-      padding: 0px 10px;
-      gap: 0px;
-    }
+    width: 100%;
 
     span:nth-child(1) {
       font-weight: 500;
       font-size: 1rem;
-      @media (max-width: 430px) {
-        font-size: 0.875rem !important;
-      }
     }
 
     span:nth-child(2) {
       font-size: 0.875rem !important;
       color: $primary-color;
       font-weight: 600;
-      @media (max-width: 430px) {
-        font-size: 0.8rem !important;
-      }
-    }
-  }
-
-  .productCardImage {
-    @include flex-center;
-    margin: 0 auto;
-    img {
-      flex: 1;
-      width: 80%;
     }
   }
 }
 .state {
-  width: clamp(60px, 15vw, 80px);
-  height: clamp(22px, 5vw, 26px);
+  width: 80px;
+  height: 26px;
   @include border;
   position: absolute;
   top: 10px;
@@ -63,7 +45,7 @@
   background-color: #929fa5;
   border-radius: 2px;
   @include flex-center;
-  font-size: clamp(0.65rem, 2vw, 0.75rem);
+  font-size: 0.75rem;
   text-transform: uppercase;
   font-weight: 600;
   color: white;
