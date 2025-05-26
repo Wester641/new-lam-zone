@@ -1,0 +1,29 @@
+@use '../../../../src/styles/variables' as *;
+@use '../../../../src/styles/mixins' as *;
+
+.productCard {
+  width: 234px;
+  height: 320px;
+  color: $text-color;
+  @include border;
+  @include flex-center;
+  justify-content: space-between;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  .productCardInfo {
+    @include flex-center;
+    flex: 1;
+    // justify-content: start;
+    align-items: start;
+    flex-direction: column;
+  }
+  .productCardImage {
+    @include flex-center;
+    margin: 0 auto;
+    img {
+      flex: 1;
+      width: 80%;
+    }
+  }
+}
