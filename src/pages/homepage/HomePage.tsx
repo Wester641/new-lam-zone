@@ -4,8 +4,9 @@ import HeaderLayout from '../../components/layout/header/HeaderLayout';
 import styles from './HomePage.module.scss';
 import Banner from '../../components/common/banner/Banner';
 import { MobileBottomNavigation } from '../../components/common/header_components/mobile_navigation/MobileBottomNavigation';
-import BestDeals from '../../components/common/deals/BestDeals';
 import Divider from '../../components/common/divider/Divider';
+import BestDeals from '../../components/common/deals/best_deals/BestDeals';
+import ShopWithCategories from '../../components/common/deals/shop_with_categories/ShopWithCategories';
 
 function HomePage() {
   return (
@@ -16,6 +17,8 @@ function HomePage() {
         <Banner />
         <Divider />
         <BestDeals />
+        <Divider />
+        <ShopWithCategories />
         <Divider />
       </Container>
       <FooterLayout />

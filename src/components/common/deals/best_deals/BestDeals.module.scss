@@ -1,0 +1,24 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/mixins' as *;
+
+.bestDealsHeader {
+  @include flex-center;
+  justify-content: space-between;
+  color: $text-color;
+
+  a {
+    font-size: 0.875rem;
+    color: $primary-color;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.bestDealsHeaderTitle {
+  @include flex-center;
+  font-size: 0.875rem;
+  gap: 24px;
+}

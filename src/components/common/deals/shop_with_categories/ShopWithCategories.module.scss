@@ -1,0 +1,38 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/mixins' as *;
+
+.shopWithCategories {
+  color: $text-color;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-size: clamp(2rem, 2.5vw, 2rem);
+  }
+}
+.container {
+  @include border;
+}
+.containerItems {
+  max-height: 236px;
+  // @include border;
+  padding: 10px;
+
+  p {
+    margin: 0;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  img {
+    max-height: 200px;
+    object-fit: contain;
+    box-sizing: border-box;
+  }
+}

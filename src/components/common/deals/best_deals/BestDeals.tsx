@@ -1,15 +1,22 @@
 import { Box, Grid } from '@mui/material';
 import styles from './BestDeals.module.scss';
 
-import mac from '../../../assets/images/slider_images/mac.png';
-import ProductCard from '../../features/products/ProductCard';
-import PriorityProduct from '../../features/priority-product/PriorityProduct';
+import mac from '../../../../assets/images/slider_images/mac.png';
+import PriorityProduct from '../../../features/priority-product/PriorityProduct';
+import ProductCard from '../../../features/products/ProductCard';
 
 const length = 8;
 
 export default function BestDeals() {
   return (
     <div className={styles.bestDeals}>
+      <Box className={styles.bestDealsHeader}>
+        <div className={styles.bestDealsHeaderTitle}>
+          <h2>Best Deals</h2>
+          <span>Deals Ends in 00:00:00</span>
+        </div>
+        <a href="#">Browse All Product</a>
+      </Box>
       <Box>
         <Grid container spacing={2}>
           <Grid size={{ sm: 12, md: 4 }}>
