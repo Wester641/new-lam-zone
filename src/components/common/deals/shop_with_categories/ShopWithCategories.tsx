@@ -42,12 +42,21 @@ export default function ShopWithCategories() {
     slidesToScroll: 2,
     centerMode: true,
     centerPadding: '0px',
-    breakPoints: [
+    responsive: [
       {
-        breakpoint: 425,
+        breakpoint: 450,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
         },
       },
     ],

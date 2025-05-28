@@ -12,18 +12,17 @@
   }
 }
 .container {
-  @include border;
+  width: 100%;
 }
 .containerItems {
   max-height: 236px;
-  // @include border;
   padding: 10px;
+  width: 100% !important;
+  box-sizing: border-box;
 
-  p {
-    margin: 0;
-    text-align: center;
-    font-weight: 500;
-  }
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
 
   &:hover {
     cursor: pointer;
@@ -34,5 +33,23 @@
     max-height: 200px;
     object-fit: contain;
     box-sizing: border-box;
+    width: 100%;
+  }
+
+  // Mobile version
+  @media (max-width: 768px) {
+    min-width: 100%;
+    max-height: none;
+    padding: 5px;
+    transform: none;
+    @include border;
+
+    &:hover {
+      transform: none;
+    }
+
+    img {
+      max-height: 180px;
+    }
   }
 }
