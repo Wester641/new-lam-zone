@@ -7,6 +7,7 @@ import { MobileBottomNavigation } from '../../components/common/header_component
 import Divider from '../../components/common/divider/Divider';
 import BestDeals from '../../components/common/deals/best_deals/BestDeals';
 import ShopWithCategories from '../../components/common/deals/shop_with_categories/ShopWithCategories';
+import FeaturedProducts from '../../components/common/deals/featured_products/FeaturedProducts';
 
 function HomePage() {
   return (
@@ -19,6 +20,8 @@ function HomePage() {
         <BestDeals />
         <Divider />
         <ShopWithCategories />
+        <Divider />
+        <FeaturedProducts />
         <Divider />
       </Container>
       <FooterLayout />

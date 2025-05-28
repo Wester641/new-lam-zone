@@ -1,0 +1,104 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/mixins' as *;
+
+.featuredImage {
+  @include border;
+  background-color: $black-friday-yellow-color;
+  box-sizing: border-box;
+  width: 312px;
+  height: 100%;
+  position: relative;
+  img {
+    position: absolute;
+    bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.featuredImageContainer {
+  @include flex-center;
+  flex-direction: column;
+  color: $text-color;
+  min-height: 152px;
+  padding-top: 32px;
+  gap: 8px;
+
+  span:nth-child(1) {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+  span:nth-child(2) {
+    color: $primary-color;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+.featuredProductsGrid {
+  box-sizing: border-box;
+}
+
+.featuredProductsHeader {
+  @include flex-center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  color: $text-color;
+
+  h3 {
+    @include flex-center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.featuredProductsFilterItems {
+  font-size: 0.875rem;
+  @include flex-center;
+  gap: 16px;
+  color: $gray-600;
+
+  // Filter items
+  @media (max-width: 768px) {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+
+    width: 100%;
+    height: 50px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    & {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
+
+  span {
+    // hover underline stylizing
+    &:hover {
+      cursor: pointer;
+      color: $text-color;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+      text-decoration-thickness: 2px;
+      text-decoration-color: $black-friday-yellow-color;
+    }
+  }
+
+  a {
+    color: $primary-color;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}

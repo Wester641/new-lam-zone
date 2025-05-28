@@ -1,30 +1,33 @@
 import { Box } from '@mui/material';
 import styles from './ShopWithCategories.module.scss';
 import Slider from 'react-slick';
-import computer from '../../../../assets/images/slider_images/Image.png';
 import iphone from '../../../../assets/images/slider_images/bgiphone.png';
 import mac from '../../../../assets/images/slider_images/mac.png';
+import comp from '../../../../assets/images/categories_images/comp.png';
+import headphone from '../../../../assets/images/categories_images/headphone.png';
+import keyboard from '../../../../assets/images/categories_images/keyboard.png';
 
 const categories = [
   {
-    image: computer,
-    title: 'Computers & Laptops',
+    image: comp,
+    title: 'Computer & Laptop',
   },
   {
     image: iphone,
-    title: 'Computers & Laptops',
+    title: 'SmartPhone',
   },
+  {
+    image: headphone,
+    title: 'Headphones',
+  },
+  {
+    image: keyboard,
+    title: 'Accessories',
+  },
+
   {
     image: mac,
-    title: 'Computers & Laptops',
-  },
-  {
-    image: iphone,
-    title: 'Computers & Laptops',
-  },
-  {
-    image: mac,
-    title: 'Computers & Laptops',
+    title: 'TV & Homes',
   },
 ];
 
