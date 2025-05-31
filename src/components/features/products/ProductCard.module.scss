@@ -54,17 +54,17 @@
   }
 }
 .state {
+  @include flex-center;
+  // @include border;
   width: clamp(60px, 15vw, 80px);
   height: clamp(22px, 5vw, 26px);
-  @include border;
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: #929fa5;
+  background-color: $black-friday-yellow-color;
+  color: $text-color;
   border-radius: 2px;
-  @include flex-center;
   font-size: clamp(0.65rem, 2vw, 0.75rem);
   text-transform: uppercase;
   font-weight: 600;
-  color: white;
 }

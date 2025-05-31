@@ -1,3 +1,7 @@
+// @use '../../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+@use '../../../styles/variables' as *;
+
 .main {
   background-color: #1b6392;
 }
@@ -32,3 +36,17 @@
 .item2 {
   background-color: #94bedc;
 } */
+.footerLink {
+  color: #ebebeb;
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover {
+    cursor: pointer;
+    color: $black-friday-yellow-color;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: $black-friday-yellow-color;
+  }
+}

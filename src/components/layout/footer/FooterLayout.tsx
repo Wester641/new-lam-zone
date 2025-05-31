@@ -126,7 +126,16 @@ const FooterLayout: React.FC = () => {
           </Grid>
         </Grid>
         <Typography variant="body2" color="white" align="center" sx={{ pt: 4 }}>
-          © 2024 Company Co. All rights reserved.
+          (S02) Copyright © 2025 Powered by
+          <a
+            className={styles.footerLink}
+            target="_blank"
+            href="https://zafarzhon.vercel.app/"
+          >
+            {' '}
+            Inctec Solutions Pte Ltd.
+          </a>{' '}
+          All rights reserved.
         </Typography>
       </Container>
     </Box>

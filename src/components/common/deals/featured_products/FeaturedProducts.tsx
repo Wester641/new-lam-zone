@@ -45,7 +45,7 @@ export default function FeaturedProducts() {
               {Array.from({ length }).map((_, index) => (
                 <Grid size={{ sm: 6, md: 3 }} key={index}>
                   <ProductCard
-                    state="Sold Out"
+                    state="Featured"
                     image={mac}
                     title={'MacBook Air (13-inch, M2, 2022)'}
                     price={750}

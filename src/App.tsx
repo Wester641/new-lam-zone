@@ -5,6 +5,7 @@ import CataloguePage from './pages/catalogue/CataloguePage';
 import FavoritesPage from './pages/favorites/FavoritesPage';
 // import RouteScrollToTop from './components/common/RouteScrollToTop';
 import HomePage from './pages/homepage/HomePage';
+import ProductDetailPage from './pages/products/ProductsDetailPage';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/cart" element={<CartPage />} />
         <Route path="/favorites" element={<FavoritesPage />} />
         <Route path="/account" element={<AccountPage />} />
+        <Route path="/product" element={<ProductDetailPage />} />
       </Routes>
     </BrowserRouter>
   );

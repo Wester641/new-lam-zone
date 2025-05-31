@@ -19,7 +19,7 @@
     align-items: start;
     justify-content: start;
     flex-direction: column;
-  
+
     gap: 8px;
     width: 100%;
 
@@ -38,11 +38,9 @@
 .state {
   width: 80px;
   height: 26px;
-  @include border;
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: #929fa5;
   border-radius: 2px;
   @include flex-center;
   font-size: 0.75rem;
