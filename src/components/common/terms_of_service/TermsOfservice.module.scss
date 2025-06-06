@@ -1,0 +1,12 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.termsOfservice {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.termsOfservice:nth-child(2) {
+  font-size: 1rem;
+  color: $orange-color;
+}

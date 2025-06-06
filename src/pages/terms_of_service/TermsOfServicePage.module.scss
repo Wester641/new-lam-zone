@@ -21,20 +21,3 @@
     padding: 10px 0;
   }
 }
-
-.gridItem:nth-child(2) {
-  @include border;
-}
-
-.box {
-  img {
-    width: 30%;
-    height: 30%;
-    box-sizing: border-box;
-
-    @media (max-width: 768px) {
-      width: 70%;
-      height: 70%;
-    }
-  }
-}

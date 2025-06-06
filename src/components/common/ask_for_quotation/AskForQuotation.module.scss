@@ -1,0 +1,80 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.form {
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.formContainer {
+  @include flex-center;
+  min-width: 100% !important;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+
+  .formControlGroup {
+    min-width: 100% !important;
+  }
+
+  .formControlGroup_1 {
+    @include flex-center;
+    min-width: 100% !important;
+
+    .textInTextField {
+      font-size: clamp(1rem, 3vw, 1rem);
+      font-weight: 500;
+      line-height: 42px;
+      min-width: 100px;
+      box-sizing: border-box;
+      text-align: start;
+      padding: 0 10px;
+    }
+  }
+}
+.formControlGroup_2 {
+  @include flex-center;
+  align-items: start;
+}
+
+.link {
+  color: $primary-color;
+}
+
+.buttonContainer {
+  min-height: 60px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 10px;
+
+  button {
+    background-color: #e5f9e5 !important;
+    color: #007f17 !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    font-size: 18px !important;
+    border-radius: 0px !important;
+    border: none !important;
+    border: 3px solid transparent !important;
+    box-sizing: border-box !important;
+    appearance: none;
+
+    &:hover {
+      border: 3px solid #50b432 !important;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+    }
+  }
+}
+
+h1 {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 22px;
+}
+h2 {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 18px;
+}

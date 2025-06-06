@@ -1,10 +1,11 @@
-import { Box, Container } from '@mui/material';
+import { Box, Container, Grid } from '@mui/material';
 import FooterLayout from '../../components/layout/footer/FooterLayout';
 import HeaderLayout from '../../components/layout/header/HeaderLayout';
 import styles from './ProductsDetailPage.module.scss';
 import { MobileBottomNavigation } from '../../components/common/header_components/mobile_navigation/MobileBottomNavigation';
 import { useParams } from 'react-router-dom';
 import { products } from '../../../products';
+import AskForQuotation from '../../components/common/ask_for_quotation/AskForQuotation';
 
 function ProductsDetailPage() {
   const { id } = useParams();
@@ -29,12 +30,19 @@ function ProductsDetailPage() {
       <HeaderLayout />
       <MobileBottomNavigation />
       <Container className={styles.grid}>
-        <Box className={styles.box}>
-          <img loading="lazy" src={product.image} alt={product.title} />
-          <h1>Product Detail Page: id: {id}</h1>
-          <span>{product.title}</span>
-          <span>{product.stock_state}</span>
-        </Box>
+        <Grid container>
+          <Grid size={{ xs: 12, md: 9 }} className={styles.gridItem}>
+            <Box className={styles.box}>
+              <img loading="lazy" src={product.image} alt={product.title} />
+              <h1>Product Detail Page: id: {id}</h1>
+              <span>{product.title}</span>
+              <span>{product.stock_state}</span>
+            </Box>
+          </Grid>
+          <Grid size={{ xs: 12, md: 3 }} className={styles.gridItem}>
+            <AskForQuotation product={product} />
+          </Grid>
+        </Grid>
       </Container>
       <FooterLayout />
     </Box>

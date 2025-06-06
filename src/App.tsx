@@ -8,6 +8,7 @@ import HomePage from './pages/homepage/HomePage';
 import ProductsDetailPage from './pages/products/ProductsDetailPage';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import TermsOfServicePage from './pages/terms_of_service/TermsOfServicePage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/favorites" element={<FavoritesPage />} />
         <Route path="/account" element={<AccountPage />} />
         <Route path="/product/:id" element={<ProductsDetailPage />} />
+        <Route path="/terms-of-service" element={<TermsOfServicePage />} />
       </Routes>
     </BrowserRouter>
   );
