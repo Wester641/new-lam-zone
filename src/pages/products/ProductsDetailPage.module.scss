@@ -12,11 +12,30 @@
   box-sizing: border-box;
   padding: 20px 0;
   max-width: 1440px;
+  color: $text-color;
   margin: 0 auto;
 
   @media (max-width: 768px) {
     max-width: 100%;
     margin: 0;
     padding: 10px 0;
+  }
+}
+
+h1 {
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-weight: 500;
+  margin: 0;
+}
+
+.box {
+  img {
+    width: 30%;
+    height: 30%;
+
+    @media (max-width: 768px) {
+      width: 70%;
+      height: 70%;
+    }
   }
 }

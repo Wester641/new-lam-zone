@@ -1,12 +1,14 @@
 import { Box, Grid } from '@mui/material';
 import styles from './FeaturedProducts.module.scss';
 
-import mac from '../../../../assets/images/slider_images/mac.png';
+// import mac from '../../../../assets/images/slider_images/mac.png';
 import ProductCard from '../../../features/products/ProductCard';
 import featured from '../../../../assets/images/featured_products.jpg';
 import ButtonComponent from '../../button/Button';
 
-const length = 8;
+import { products } from '../../../../../products';
+
+// const length = 8;
 
 const filterItems = ['All Product', 'Smart Phone', 'Laptop', 'Headphone', 'TV'];
 
@@ -42,13 +44,14 @@ export default function FeaturedProducts() {
               </div>
             </Box>
             <Grid container spacing={2}>
-              {Array.from({ length }).map((_, index) => (
+              {products.map((product, index) => (
                 <Grid size={{ sm: 6, md: 3 }} key={index}>
                   <ProductCard
+                    id={`${product.id}`}
                     state="Featured"
-                    image={mac}
-                    title={'MacBook Air (13-inch, M2, 2022)'}
-                    price={750}
+                    image={product.image}
+                    title={product.title}
+                    price={product.price}
                   />
                 </Grid>
               ))}

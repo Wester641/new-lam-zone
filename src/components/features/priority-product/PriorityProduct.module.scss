@@ -19,16 +19,27 @@
     align-items: start;
     justify-content: start;
     flex-direction: column;
+    padding: 0 14px;
+    box-sizing: border-box;
 
     gap: 8px;
     width: 100%;
 
-    span:nth-child(1) {
+    .productTitle {
       font-weight: 500;
       font-size: 1rem;
+      text-decoration: none;
+      color: $text-color;
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        text-decoration-thickness: 2px;
+        text-decoration-color: $black-friday-yellow-color;
+      }
     }
 
-    span:nth-child(2) {
+    span {
       font-size: 0.875rem !important;
       color: $primary-color;
       font-weight: 600;

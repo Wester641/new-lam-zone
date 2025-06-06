@@ -6,7 +6,7 @@
   color: $text-color;
   @include border;
   @include flex-center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   box-sizing: border-box;
   box-shadow: none !important;
@@ -15,7 +15,8 @@
 
   .productCardInfo {
     @include flex-center;
-    flex: 1;
+    // justify-content: center !important;
+    // flex: 1;
     align-items: start;
     flex-direction: column;
     padding: 0px 14px;
@@ -26,15 +27,24 @@
       gap: 0px;
     }
 
-    span:nth-child(1) {
+    .productTitle {
       font-weight: 500;
       font-size: 1rem;
+      text-decoration: none;
+      color: $text-color;
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        text-decoration-thickness: 2px;
+        text-decoration-color: $black-friday-yellow-color;
+      }
       @media (max-width: 430px) {
         font-size: 0.875rem !important;
       }
     }
 
-    span:nth-child(2) {
+    span {
       font-size: 0.875rem !important;
       color: $primary-color;
       font-weight: 600;
@@ -49,6 +59,7 @@
     margin: 0 auto;
     img {
       flex: 1;
+      padding: 5px;
       width: 80%;
     }
   }

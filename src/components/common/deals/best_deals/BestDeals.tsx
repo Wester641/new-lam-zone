@@ -4,8 +4,9 @@ import styles from './BestDeals.module.scss';
 import mac from '../../../../assets/images/slider_images/mac.png';
 import PriorityProduct from '../../../features/priority-product/PriorityProduct';
 import ProductCard from '../../../features/products/ProductCard';
+import { products } from '../../../../../products';
 
-const length = 8;
+const macAir = products.slice(1, 2);
 
 export default function BestDeals() {
   return (
@@ -21,6 +22,7 @@ export default function BestDeals() {
         <Grid container spacing={2}>
           <Grid size={{ sm: 12, md: 4 }}>
             <PriorityProduct
+              id={`${macAir[0].id}`}
               state="Sold Out"
               image={mac}
               title={'MacBook Air (13-inch, M2, 2022)'}
@@ -30,13 +32,14 @@ export default function BestDeals() {
 
           <Grid size={{ sm: 12, md: 8 }}>
             <Grid container spacing={2}>
-              {Array.from({ length }).map((_, index) => (
+              {products.map((product, index) => (
                 <Grid size={{ sm: 6, md: 3 }} key={index}>
                   <ProductCard
+                    id={`${product.id}`}
                     state="Featured"
-                    image={mac}
-                    title={'MacBook Air (13-inch, M2, 2022)'}
-                    price={750}
+                    image={product.image}
+                    title={product.title}
+                    price={product.price}
                   />
                 </Grid>
               ))}
