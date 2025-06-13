@@ -6,6 +6,7 @@ import mac from '../../../../assets/images/slider_images/mac.png';
 import comp from '../../../../assets/images/categories_images/comp.png';
 import headphone from '../../../../assets/images/categories_images/headphone.png';
 import keyboard from '../../../../assets/images/categories_images/keyboard.png';
+import { Link } from 'react-router-dom';
 
 const categories = [
   {
@@ -69,7 +70,9 @@ export default function ShopWithCategories() {
         {categories.map((category, index) => (
           <Box className={styles.container}>
             <Box key={index} className={styles.containerItems}>
-              <img src={category.image} loading="lazy" alt={category.title} />
+              <Link to={'/catalogue'}>
+                <img src={category.image} loading="lazy" alt={category.title} />
+              </Link>
               <p>{category.title}</p>
             </Box>
           </Box>
