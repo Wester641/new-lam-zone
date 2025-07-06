@@ -1,10 +1,10 @@
-import { Box, Grid } from '@mui/material';
-import styles from './BestDeals.module.scss';
+import { Box, Grid } from "@mui/material";
+import styles from "./BestDeals.module.scss";
 
-import mac from '../../../../assets/images/slider_images/mac.png';
-import PriorityProduct from '../../../features/priority-product/PriorityProduct';
-import ProductCard from '../../../features/products/ProductCard';
-import { products } from '../../../../../products';
+import mac from "../../../../assets/images/slider_images/mac.png";
+import PriorityProduct from "../../../features/priority-product/PriorityProduct";
+import ProductCard from "../../../features/products/ProductCard";
+import { products } from "../../../../../products";
 
 const macAir = products.slice(1, 2);
 
@@ -25,7 +25,7 @@ export default function BestDeals() {
               id={`${macAir[0].id}`}
               state="Sold Out"
               image={mac}
-              title={'MacBook Air (13-inch, M2, 2022)'}
+              title={"MacBook Air (13-inch, M2, 2022)"}
               price={750}
             />
           </Grid>
