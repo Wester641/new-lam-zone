@@ -261,13 +261,19 @@ export const newStockAvailable = [
     price: "4000 AED",
     old_price: "4500 AED",
     new_price: "4000 AED",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/v1748688493/Image_1_oocvh0.png",
     delivered_by: "Aug 02",
     discount: "19%OFF",
     sku: "MBA-256",
     description:
       "67W USB-C Power Adapter (M1 Pro with 8-core CPU) or 96W USB-C Power Adapter (M1 Pro with 10-core CPU or M1 Max)",
-    specifications: {},
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1748688493/Image_1_oocvh0.png",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751886996/orig_abmh0r.jpg",
+      ],
+    },
     colors: ["Space Gray", "Silver"],
     tags: ["Macbook", "Pro", "16", "512", "M1pro", "2021", "A2485"],
   },
@@ -282,13 +288,19 @@ export const newStockAvailable = [
     price: "4200 AED",
     old_price: "4700 AED",
     new_price: "4200 AED",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/v1748688493/Image_1_oocvh0.png",
     delivered_by: "Aug 02",
     discount: "19%OFF",
     sku: "MBA-256",
     description:
       "67W USB-C Power Adapter (M1 Pro with 8-core CPU) or 96W USB-C Power Adapter (M1 Pro with 10-core CPU or M1 Max)",
-    specifications: {},
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1748688493/Image_1_oocvh0.png",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751886996/orig_abmh0r.jpg",
+      ],
+    },
     colors: ["Space Gray", "Silver"],
     tags: ["Macbook", "Pro", "16", "512", "M1pro", "1tb", "2021", "A2485"],
   },
@@ -303,13 +315,19 @@ export const newStockAvailable = [
     price: "3300 AED",
     old_price: "3800 AED",
     new_price: "3300 AED",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/v1751887609/orig_1_bcy5v3.jpg",
     delivered_by: "Aug 02",
     discount: "19%OFF",
     sku: "MBA-256",
     description:
       "67W USB-C Power Adapter (M1 Pro with 8-core CPU) or 96W USB-C Power Adapter (M1 Pro with 10-core CPU or M1 Max)",
-    specifications: {},
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751887472/71St_t-rx0L_inoxlh.jpg",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751887479/i_gbid5b.webp",
+      ],
+    },
     colors: ["Space Gray", "Silver"],
     tags: ["Macbook", "Pro", "14", "512", "M1pro", "512gb", "2021", "A2442"],
   },
@@ -324,12 +342,19 @@ export const newStockAvailable = [
     price: "3900 AED",
     old_price: "4400 AED",
     new_price: "3900 AED",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/v1751887921/2029058_v01_b_k5p9wn.jpg",
     delivered_by: "Aug 02",
     discount: "19%OFF",
     sku: "MBA-256",
     description: "67W USB-C Power Adapter (M2 Pro with 10-core CPU)",
-    specifications: {},
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751887931/6exmyneacll4lb226mv5jdto86wauw5e_il93xd.jpg",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751887912/fiwqnny7pr1r3j2p2sq48z0m2fduhraa_gzh4cb.jpg",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751887904/orig_vmu9ex.png",
+      ],
+    },
     colors: ["Space Gray", "Silver"],
     tags: ["Macbook", "Pro", "14", "512", "M2pro", "512gb", "2023", "A2779"],
   },
@@ -344,12 +369,18 @@ export const newStockAvailable = [
     price: "4800 AED",
     old_price: "5300 AED",
     new_price: "4800 AED",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/v1751888430/7079201312_vna6bf.jpg",
     delivered_by: "Aug 02",
     discount: "19%OFF",
     sku: "MBA-256",
     description: "96W USB-C Power Adapter (M2 Pro with 12-core CPU)",
-    specifications: {},
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751888417/m414gzvqq7i0iy7rjk5kpy4v0insntb1_cyivju.jpg",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751887912/fiwqnny7pr1r3j2p2sq48z0m2fduhraa_gzh4cb.jpg",
+      ],
+    },
     colors: ["Silver"],
     tags: ["Macbook", "Pro", "16", "512", "M2pro", "512gb", "2023", "A2780"],
   },
@@ -364,12 +395,18 @@ export const newStockAvailable = [
     price: "4700 AED",
     old_price: "5200 AED",
     new_price: "4700 AED",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/v1751890085/7628879440_a6pefk.jpg",
     delivered_by: "Aug 02",
     discount: "19%OFF",
     sku: "MBA-256",
     description: "96W USB-C Power Adapter (M2 Pro with 12-core CPU)",
-    specifications: {},
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751889993/orig_2_zolenm.jpg",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751889992/ca2978953fecf0ab6015d0e51b340d23_pgai8j.jpg",
+      ],
+    },
     colors: ["Silver"],
     tags: ["Macbook", "Pro", "18", "512", "M3pro", "512gb", "2023", "A2992"],
   },
@@ -384,12 +421,18 @@ export const newStockAvailable = [
     price: "5600 AED",
     old_price: "6100 AED",
     new_price: "5600 AED",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/v1751890085/7628879440_a6pefk.jpg",
     delivered_by: "Aug 02",
     discount: "19%OFF",
     sku: "MBA-256",
     description: "96W USB-C Power Adapter (M2 Pro with 12-core CPU)",
-    specifications: {},
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751889993/orig_2_zolenm.jpg",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751889992/ca2978953fecf0ab6015d0e51b340d23_pgai8j.jpg",
+      ],
+    },
     colors: ["Silver"],
     tags: ["Macbook", "Pro", "16", "512", "M3pro", "512gb", "2023", "A2991"],
   },
@@ -406,13 +449,19 @@ export const StockAvailableProducts = [
     price: "420 AED",
     old_price: "460 AED",
     new_price: "420 AED",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/v1751890795/s-l1600_hqalad.jpg",
     delivered_by: "Aug 02",
     discount: "19%OFF",
     sku: "MBA-256",
     description:
       "45W Smart AC Adapter (Intel Core i5 6th Gen, HP EliteBook Series, 14-inch Display)",
-    specifications: {},
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751890787/V1AN_1_20200428553528639_uu65ep.webp",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751890780/64216b1b6312c52f105ba67e-1_yp5axo.jpg",
+      ],
+    },
     colors: ["Platinum", "Silver"],
     tags: [
       "Hp",
@@ -437,13 +486,19 @@ export const StockAvailableProducts = [
     price: "460 AED",
     old_price: "510 AED",
     new_price: "460 AED",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/v1751891142/2_926341-3000x1449_ulzhvd.jpg",
     delivered_by: "Aug 02",
     discount: "19%OFF",
     sku: "MBA-256",
     description:
       "65W USB-C Power Adapter (Intel Core i5 8th Gen, ThinkPad T Series, Slim Design, 14-inch)",
-    specifications: {},
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751891147/3_160339_dnpesw.jpg",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751891160/lenovo-thinkpad-t480-thinkpro-3_bh7ivq.jpg",
+      ],
+    },
     colors: ["Black", "Silver"],
     tags: ["Lenovo", "T480s", "14", "256", "i5", "8th", "Thinkpad", "T series"],
   },
@@ -458,13 +513,19 @@ export const StockAvailableProducts = [
     price: "270 AED",
     old_price: "310 AED",
     new_price: "270 AED",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/v1751891985/A5dDomazyDI0bjy1dGRyvmUpPmeJv8w54iwXFhry_ieypod.jpg",
     delivered_by: "Aug 02",
     discount: "19%OFF",
     sku: "MBA-256",
     description:
       "45W Slim Tip Adapter (Intel Core i3 6th Gen, ThinkPad L Series, Business Laptop, 14-inch)",
-    specifications: {},
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751891975/20200617_124331-2048x1536_dmpemp.jpg",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751891968/20200617_124258-scaled_mhfkfx.jpg",
+      ],
+    },
     colors: ["Business Black"],
     tags: ["Lenovo", "L460", "14", "256", "i3", "6th", "Thinkpad", "L series"],
   },
@@ -479,13 +540,19 @@ export const StockAvailableProducts = [
     price: "560 AED",
     old_price: "610 AED",
     new_price: "560 AED",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/v1751892405/d3c860fa-59ce-4403-8942-9388b00ca513_qluw9l.jpg",
     delivered_by: "Aug 02",
     discount: "19%OFF",
     sku: "MBA-256",
     description:
       "65W USB-C Power Adapter (Intel Core i5 10th Gen, Dell Latitude Series, 14-inch)",
-    specifications: {},
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/e_background_removal/b_rgb:FFFFFF/f_png/v1751892399/dell-latitude-5410_bkskp1.png",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751892390/4_527086_tp8dzb.jpg",
+      ],
+    },
     colors: ["Silver"],
     tags: ["Dell", "5410", "14", "256", "i5", "10th", "Dell Latitude"],
   },
@@ -500,13 +567,19 @@ export const StockAvailableProducts = [
     price: "500 AED",
     old_price: "550 AED",
     new_price: "500 AED",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/v1751893396/s-l1600_1_bev52z.jpg",
     delivered_by: "Aug 02",
     discount: "19%OFF",
     sku: "MBA-256",
     description:
       "65W USB-C Power Adapter (Intel Core i5 10th Gen, Dell Latitude Series, 13.3-inch)",
-    specifications: {},
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751893410/81c9j4mCN0L._AC_SL1500__srelvc.jpg",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751893384/product_image_86169_1233196_idktq0.jpg",
+      ],
+    },
     colors: ["Silver"],
     tags: ["Dell", "5310", "13", "256", "i5", "10th", "Dell Latitude"],
   },
@@ -516,19 +589,178 @@ export const StockAvailableProducts = [
     total_stock: 10,
     rating: "3.8",
     reviewCount: "19k",
-    title: "Hp 840 G5 i7 8th .8gb. 256 gb , 14 inch , Price = 670 aed.",
+    title: "Hp 840 G5 i7 8th .8gb. 256 gb , 14 inch",
     shop_name: "L&M Zone",
     price: "670 AED",
     old_price: "720 AED",
     new_price: "670 AED",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/b_rgb:FFFFFF/v1751894141/HP-Approved-Selection-840-G5_Front_Png_tvfbgh.png",
     delivered_by: "Aug 02",
     discount: "19%OFF",
     sku: "MBA-256",
     description:
       "65W USB-C Power Adapter (Intel Core i7 8th Gen, HP EliteBook Series, 14-inch)",
-    specifications: {},
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751894149/c73fc351-d51a-4d62-b569-298fe1d397c2-1_0a2e25d8-4559-4169-a18a-1dd61e696993_uzkuje.jpg",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751894159/7463ce41-a9e4-4603-aaff-56a794c91ed7-1_8bc8b341-a319-4021-b698-bf72c983cd93_wqmjcq.jpg",
+      ],
+    },
     colors: ["Silver"],
     tags: ["Hp", "840 G5", "14", "256", "i7", "8th", "Hp Elitebook"],
+  },
+  {
+    id: 7,
+    stock_state: "Available",
+    total_stock: 10,
+    rating: "3.8",
+    reviewCount: "19k",
+    title: "Hp 840 G7 i5 10th.8gb, 256 gb , 14 inch",
+    shop_name: "L&M Zone",
+    price: "720 AED",
+    old_price: "770 AED",
+    new_price: "720 AED",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/v1751896235/s-l1600_2_ntvzk2.jpg",
+    delivered_by: "Aug 02",
+    discount: "19%OFF",
+    sku: "MBA-256",
+    description:
+      "65W USB-C Power Adapter (Intel Core i5 10th Gen, HP EliteBook Series, 14-inch)",
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751896236/orig_3_i6nhqb.jpg",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/e_background_removal/b_rgb:FFFFFF/f_png/v1751896238/hpelitebook840g7_udltm8.jpg",
+      ],
+    },
+    colors: ["Silver"],
+    tags: [
+      "HP",
+      "EliteBook",
+      "840",
+      "G7",
+      "i5",
+      "10thGen",
+      "8GB",
+      "256GB",
+      "14inch",
+      "Laptop",
+      "Silver",
+    ],
+  },
+  {
+    id: 8,
+    stock_state: "Available",
+    total_stock: 10,
+    rating: "3.8",
+    reviewCount: "19k",
+    title:
+      "Microsoft Surface Laptop 4 , i5 11th touch, 8gb , 256 gb , 13.5 screen",
+    shop_name: "L&M Zone",
+    price: "1070 AED",
+    old_price: "1120 AED",
+    new_price: "1070 AED",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/v1751897045/125fb209f5e0eaf69bec2df49fa39faa-hi_qj1gee.jpg",
+    delivered_by: "Aug 02",
+    discount: "19%OFF",
+    sku: "MBA-256",
+    description:
+      "65W Surface Connect Power Adapter (Intel Core i5 11th Gen, Touch Display, 13.5-inch)",
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751897045/s-l1600_3_fenjaf.jpg",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751897093/s-l1600_4_moi4iu.jpg",
+      ],
+    },
+    colors: ["Silver", "Black"],
+    tags: [
+      "Microsoft",
+      "SurfaceLaptop4",
+      "i5",
+      "11thGen",
+      "Touch",
+      "8GB",
+      "256GB",
+      "13.5inch",
+      "Laptop",
+      "Silver",
+      "Black",
+    ],
+  },
+  {
+    id: 9,
+    stock_state: "Available",
+    total_stock: 10,
+    rating: "3.8",
+    reviewCount: "19k",
+    title: "Hp 850 G6 i5 8th.8gb. 256 gb , 15.6",
+    shop_name: "L&M Zone",
+    price: "710 AED",
+    old_price: "760 AED",
+    new_price: "710 AED",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/v1751897789/1582617492_1_f8etbk.jpg",
+    discount: "19%OFF",
+    sku: "MBA-256",
+    description:
+      "65W USB-C Power Adapter (Intel Core i5 8th Gen, HP ProBook Series, 15.6-inch)",
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751897803/60050_0notebookhp-jpg_bvorz4.jpg",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751897776/s-l500_lfy1si.jpg",
+      ],
+    },
+    colors: ["Silver"],
+    tags: [
+      "HP",
+      "ProBook",
+      "850G6",
+      "i5",
+      "8thGen",
+      "8GB",
+      "256GB",
+      "15.6inch",
+      "Laptop",
+      "Silver",
+    ],
+  },
+  {
+    id: 10,
+    stock_state: "Available",
+    total_stock: 10,
+    rating: "3.8",
+    reviewCount: "19k",
+    title: "Hp 845 G10 , Rayzan 5 , 16 gb , 256 gb , 14 inch , Price =1250 aed",
+    shop_name: "L&M Zone",
+    price: "1250 AED",
+    old_price: "1300 AED",
+    new_price: "1250 AED",
+    image:
+      "https://res.cloudinary.com/dx2cycu19/image/upload/v1751898193/845-G10-%D1%81%D0%B5%D1%80%D0%B5%D0%B1%D1%80%D0%BE_scs5lg.webp",
+    delivered_by: "Aug 02",
+    discount: "19%OFF",
+    sku: "MBA-256",
+    description:
+      "65W USB-C Power Adapter (AMD Ryzen 5, HP EliteBook 845 G10, 14-inch, Open Box)",
+    specifications: {
+      spec_images: [
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751898203/elitebook845g10_f2mkga.jpg",
+        "https://res.cloudinary.com/dx2cycu19/image/upload/v1751898209/HP_EliteBook_845_G10_000044_dteb9u.jpg",
+      ],
+    },
+    colors: ["Silver"],
+    tags: [
+      "HP",
+      "EliteBook",
+      "845G10",
+      "Ryzen5",
+      "16GB",
+      "256GB",
+      "14inch",
+      "Laptop",
+      "Silver",
+    ],
   },
 ];
