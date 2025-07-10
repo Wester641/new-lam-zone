@@ -1,93 +1,33 @@
 import style from "./Category.module.scss";
-
 export default function Category() {
+  const categories = [
+    "Electronics Devices",
+    "Computer & Laptop",
+    "Computer Accessories",
+    "SmartPhone",
+    "Headphone",
+    "Mobile Accessories",
+    "Gaming Console",
+    "Camera & Photo",
+    "TV & Homes Appliances",
+    "Watchs & Accessories",
+    "GPS & Navigation",
+    "Warable Technology",
+  ];
+
   return (
     <div className={style.Category}>
-      <h1>Category</h1>
-      <div className={style.checkbox}>
-        <label className={style.radioLabel}>
-          <input type="radio" name="option" />
-          <span className={style.customRadio}></span>
-          <p className={style.checkbox_p}>Electronics Devices</p>
-        </label>
-      </div>
-      <div className={style.checkbox}>
-        <label className={style.radioLabel}>
-          <input type="radio" name="option" />
-          <span className={style.customRadio}></span>
-          <p className={style.checkbox_p}>Computer & Laptop</p>
-        </label>
-      </div>
-      <div className={style.checkbox}>
-        <label className={style.radioLabel}>
-          <input type="radio" name="option" />
-          <span className={style.customRadio}></span>
-          <p className={style.checkbox_p}>Computer Accessories</p>
-        </label>
-      </div>
-      <div className={style.checkbox}>
-        <label className={style.radioLabel}>
-          <input type="radio" name="option" />
-          <span className={style.customRadio}></span>
-          <p className={style.checkbox_p}>SmartPhone</p>
-        </label>
-      </div>
-      <div className={style.checkbox}>
-        <label className={style.radioLabel}>
-          <input type="radio" name="option" />
-          <span className={style.customRadio}></span>
-          <p className={style.checkbox_p}>Headphone</p>
-        </label>
-      </div>
-      <div className={style.checkbox}>
-        <label className={style.radioLabel}>
-          <input type="radio" name="option" />
-          <span className={style.customRadio}></span>
-          <p className={style.checkbox_p}>Mobile Accessories</p>
-        </label>
-      </div>
-      <div className={style.checkbox}>
-        <label className={style.radioLabel}>
-          <input type="radio" name="option" />
-          <span className={style.customRadio}></span>
-          <p className={style.checkbox_p}>Gaming Console</p>
-        </label>
-      </div>
-      <div className={style.checkbox}>
-        <label className={style.radioLabel}>
-          <input type="radio" name="option" />
-          <span className={style.customRadio}></span>
-          <p className={style.checkbox_p}>Camera & Photo</p>
-        </label>
-      </div>
-      <div className={style.checkbox}>
-        <label className={style.radioLabel}>
-          <input type="radio" name="option" />
-          <span className={style.customRadio}></span>
-          <p className={style.checkbox_p}>TV & Homes Appliances</p>
-        </label>
-      </div>
-      <div className={style.checkbox}>
-        <label className={style.radioLabel}>
-          <input type="radio" name="option" />
-          <span className={style.customRadio}></span>
-          <p className={style.checkbox_p}>Watchs & Accessories</p>
-        </label>
-      </div>
-      <div className={style.checkbox}>
-        <label className={style.radioLabel}>
-          <input type="radio" name="option" />
-          <span className={style.customRadio}></span>
-          <p className={style.checkbox_p}>GPS & Navigation</p>
-        </label>
-      </div>
-      <div className={style.checkbox}>
-        <label className={style.radioLabel}>
-          <input type="radio" name="option" />
-          <span className={style.customRadio}></span>
-          <p className={style.checkbox_p}>Warable Technology</p>
-        </label>
-      </div>
+      <h1 className={style.Category_h1}>Category</h1>
+
+      {categories.map((category, index) => (
+        <div className={style.checkbox} key={index}>
+          <label className={style.radioLabel}>
+            <input type="radio" name="option" />
+            <span className={style.customRadio}></span>
+            <p className={style.checkbox_p}>{category}</p>
+          </label>
+        </div>
+      ))}
     </div>
   );
 }

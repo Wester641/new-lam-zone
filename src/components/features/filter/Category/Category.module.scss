@@ -2,6 +2,10 @@
     padding-bottom: 30px;
     border-bottom: 1px solid #E4E7E9;
 
+    .Category_h1 {
+        font-size: 16px;
+    }
+
     .checkbox {
         .radioLabel {
             display: flex;
@@ -15,6 +19,8 @@
             .checkbox_p {
                 margin-top: 5px;
                 margin-bottom: 5px;
+                font-size: 14px;
+                color: #475156;
             }
 
             .customRadio {
