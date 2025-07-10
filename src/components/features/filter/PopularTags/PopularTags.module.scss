@@ -4,7 +4,7 @@
 
     .PopularTag_h1 {
         color: #000000;
-        margin-bottom: 5px;
+        margin-bottom: 16px;
         font-size: 16px;
     }
 
@@ -26,6 +26,12 @@
             }
         }
     }
+}
 
+@media (max-width:600px) {
+
+    .PopularTags {
+        display: none;
+    }
 
 }
