@@ -6,6 +6,7 @@ import styles from "./CataloguePage.module.scss";
 import { products } from "../../../products";
 import CatalogueProducts from "../../components/features/catalogue_products/CatalogueProducts";
 import Category from "../../components/features/filter/Category/Category";
+import PopularTags from "../../components/features/filter/PopularTags/PopularTags";
 function CataloguePage() {
   return (
     <Box className={styles.homePage}>
@@ -16,6 +17,7 @@ function CataloguePage() {
         <Grid container spacing={2}>
           <Grid size={{ sm: 2, md: 2 }}>
             <Category />
+            <PopularTags />
           </Grid>
           <Grid size={{ sm: 10, md: 10 }}>
             <Grid container spacing={2}>

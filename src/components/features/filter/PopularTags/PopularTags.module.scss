@@ -5,6 +5,7 @@
     .PopularTag_h1 {
         color: #000000;
         margin-bottom: 5px;
+        font-size: 16px;
     }
 
     .PopularTagBlock {
@@ -15,7 +16,8 @@
         .button1 {
             background-color: rgb(255, 255, 255);
             border: 1px solid #E4E7E9;
-            color: #000000;
+            color: #475156;
+            font-size: 14;
             padding: 10px;
 
             &:hover {
