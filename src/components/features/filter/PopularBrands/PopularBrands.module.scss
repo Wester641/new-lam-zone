@@ -1,0 +1,58 @@
+.PopularBrands {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    color: black;
+
+    .container {
+        display: flex;
+        gap: 20px;
+
+        .PopularBrands_top,
+        .PopularBrands_bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .text {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            input[type="checkbox"] {
+                display: none;
+            }
+
+            .customBox {
+                width: 18px;
+                height: 18px;
+                border: 2px solid #88837f;
+                border-radius: 4px;
+                position: relative;
+            }
+
+            input[type="checkbox"]:checked+.customBox {
+                background-color: #FA8232;
+                border-color: #FA8232;
+            }
+
+            input[type="checkbox"]:checked+.customBox::after {
+                content: "";
+                position: absolute;
+                top: 3px;
+                left: 5px;
+                width: 4px;
+                height: 8px;
+                border: solid white;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
