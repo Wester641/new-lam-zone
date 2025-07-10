@@ -1,0 +1,29 @@
+.PopularTags {
+    display: flex;
+    flex-direction: column;
+
+    .PopularTag_h1 {
+        color: #000000;
+        margin-bottom: 5px;
+    }
+
+    .PopularTagBlock {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .button1 {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid #E4E7E9;
+            color: #000000;
+            padding: 10px;
+
+            &:hover {
+                color: #FA8232;
+                border: 1px solid #FA8232;
+            }
+        }
+    }
+
+
+}
