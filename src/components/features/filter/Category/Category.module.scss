@@ -1,0 +1,40 @@
+.Category {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E4E7E9;
+
+    .checkbox {
+        .radioLabel {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            input[type="radio"] {
+                display: none;
+            }
+
+            .checkbox_p {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            .customRadio {
+                width: 18px;
+                height: 18px;
+                border: 1px solid #88837f;
+                border-radius: 50%;
+                position: relative;
+            }
+
+            input[type="radio"]:checked+.customRadio::after {
+                content: "";
+                position: absolute;
+                top: -2px;
+                left: -1px;
+                width: 6px;
+                height: 6px;
+                border: 8px solid #FA8232;
+                border-radius: 50%;
+            }
+        }
+    }
+}

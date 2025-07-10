@@ -5,25 +5,33 @@ import FooterLayout from "../../components/layout/footer/FooterLayout";
 import styles from "./CataloguePage.module.scss";
 import { products } from "../../../products";
 import CatalogueProducts from "../../components/features/catalogue_products/CatalogueProducts";
-
+import Category from "../../components/features/filter/Category/Category";
 function CataloguePage() {
   return (
     <Box className={styles.homePage}>
       <HeaderLayout />
       <MobileBottomNavigation />
+
       <Container className={styles.grid}>
         <Grid container spacing={2}>
-          {products.map((product, index) => (
-            <Grid size={{ sm: 6, md: 2 }} key={index}>
-              <CatalogueProducts
-                id={`${product.id}`}
-                state="Featured"
-                image={product.image}
-                title={product.title}
-                price={product.price}
-              />
+          <Grid size={{ sm: 2, md: 2 }}>
+            <Category />
+          </Grid>
+          <Grid size={{ sm: 10, md: 10 }}>
+            <Grid container spacing={2}>
+              {products.map((product, index) => (
+                <Grid size={{ sm: 6, md: 2 }} key={index}>
+                  <CatalogueProducts
+                    id={`${product.id}`}
+                    state="Featured"
+                    image={product.image}
+                    title={product.title}
+                    price={product.price}
+                  />
+                </Grid>
+              ))}
             </Grid>
-          ))}
+          </Grid>
         </Grid>
       </Container>
       <FooterLayout />
