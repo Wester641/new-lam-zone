@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import styles from "./PopularBrands.module.scss";
 
 export default function PopularBrands() {
@@ -13,10 +14,10 @@ export default function PopularBrands() {
   const brands2 = ["Google", "Samsung", "HP", "Xiaomi", "Panasonic", "Intel"];
 
   return (
-    <div className={styles.PopularBrands}>
+    <Box className={styles.PopularBrands}>
       <h1 className={styles.PopularBrands_h1}>POPULAR BRANDS</h1>
-      <div className={styles.container}>
-        <div className={styles.PopularBrands_top}>
+      <Box className={styles.container}>
+        <Box className={styles.PopularBrands_top}>
           {brands.map((brand, index) => (
             <label className={styles.checkbox} key={index}>
               <input type="checkbox" />
@@ -24,8 +25,8 @@ export default function PopularBrands() {
               <p className={styles.text}>{brand}</p>
             </label>
           ))}
-        </div>
-        <div className={styles.PopularBrands_bottom}>
+        </Box>
+        <Box className={styles.PopularBrands_bottom}>
           {brands2.map((brand, index) => (
             <label className={styles.checkbox} key={index}>
               <input type="checkbox" />
@@ -33,8 +34,8 @@ export default function PopularBrands() {
               <p className={styles.text}>{brand}</p>
             </label>
           ))}
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </Box>
   );
 }
