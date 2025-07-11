@@ -1,0 +1,115 @@
+.WatchesBanner {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border: 4px solid #FFE7D6;
+    border-radius: 3px;
+    width: 120%;
+
+    .WatchesBanner_top {
+        .watchImg {
+            display: flex;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .blocKtext {
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+
+            .textClocks {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .blocKtext_h1 {
+                font-size: 24px;
+            }
+        }
+
+        .priceBlock {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+
+            .priceBlock_p {
+                margin-top: 0;
+                margin-bottom: 0;
+                color: #475156;
+            }
+
+            .Block {
+                background-color: #F3DE6D;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                font-size: 16px;
+                margin-top: 0;
+                border-radius: 5px;
+
+            }
+        }
+    }
+
+    .WatchesBanner_bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+
+        .bottom1 {
+            background-image: url(../../../../assets/images/BannerClockImages/basket.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-position: 10% center;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #FA8232;
+            color: #FA8232;
+
+            &:hover {
+                background-color: #FA8232;
+                color: #FFE7D6;
+            }
+        }
+
+        .bottom2 {
+            width: 80%;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #FA8232;
+            color: #FA8232;
+
+            &:hover {
+                background-color: #FA8232;
+                color: #FFE7D6;
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .WatchesBanner {
+        display: none;
+    }
+}
