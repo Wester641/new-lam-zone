@@ -15,7 +15,7 @@ export default function PopularBrands() {
 
   return (
     <Box className={styles.PopularBrands}>
-      <h1 className={styles.PopularBrands_h1}>POPULAR BRANDS</h1>
+      <h1 className={styles.PopularBrands_h1}>Popular brands</h1>
       <Box className={styles.container}>
         <Box className={styles.PopularBrands_top}>
           {brands.map((brand, index) => (

@@ -16,12 +16,12 @@ function CataloguePage() {
 
       <Container className={styles.grid}>
         <Grid container spacing={2}>
-          <Grid size={{ sm: 2, md: 2 }}>
+          <Grid size={{ sm: 0, md: 2 }}>
             <Category />
             <PopularBrands />
             <PopularTags />
           </Grid>
-          <Grid size={{ sm: 10, md: 10 }}>
+          <Grid size={{ sm: 12, md: 10 }}>
             <Grid container spacing={2}>
               {products.map((product, index) => (
                 <Grid size={{ sm: 6, md: 2 }} key={index}>

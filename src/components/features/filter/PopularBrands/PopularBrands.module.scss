@@ -1,3 +1,6 @@
+@use "../../../../styles/variables" as *;
+@use "../../../../styles/mixins" as *;
+
 .PopularBrands {
   display: flex;
   flex-direction: column;
@@ -5,8 +8,13 @@
   border-bottom: 1px solid #e4e7e9;
   padding-bottom: 30px;
 
+  @media (max-width: 600px) {
+    display: none;
+  }
+
   .PopularBrands_h1 {
     font-size: 16px;
+    margin-bottom: 16px;
   }
 
   .container {
@@ -39,14 +47,14 @@
       .customBox {
         width: 18px;
         height: 18px;
-        border: 2px solid #88837f;
+        border: 1px solid $border-color3;
         border-radius: 4px;
         position: relative;
       }
 
       input[type="checkbox"]:checked + .customBox {
-        background-color: #fa8232;
-        border-color: #fa8232;
+        background-color: $orange-color;
+        border-color: $orange-color;
       }
 
       input[type="checkbox"]:checked + .customBox::after {
