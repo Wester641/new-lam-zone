@@ -1,25 +1,19 @@
 import styles from "./SupportSection.module.scss";
 import CreditCard from "../../../assets/images/icons_For_SupportSection/CreditCard.svg";
 import LockOpen from "../../../assets/images/icons_For_SupportSection/LockOpen.svg";
-import Notepad from "../../../assets/images/icons_For_SupportSection/Notepad.svg";
-import Stack from "../../../assets/images/icons_For_SupportSection/Stack.svg";
 import Storefront from "../../../assets/images/icons_For_SupportSection/Storefront.svg";
 import Truck from "../../../assets/images/icons_For_SupportSection/Truck.svg";
-import User from "../../../assets/images/icons_For_SupportSection/User.svg";
-import man_with_laptop from "../../../assets/images/icons_For_SupportSection/man with laptop1.png";
+import man_with_laptop from "../../../assets/images/icons_For_SupportSection/man_with_laptop1.jpg";
 import { Box } from "@mui/material";
 
 export default function SupportSection() {
   const block = [
     "How do I return my item?",
-    "What is Clicon's Returns Policy?",
+    "What is Returns Policy?",
     "How long is the refund process?",
     "What are the 'Delivery Timelines'?",
-    "What is 'Discover Your Daraz Campaign 2022'?",
-    "What is the Voucher & Gift Offer in this Campaign?",
-    "How to cancel Clicon Order.",
+    "How to cancel Order.",
     "Ask the Digital and Device Community.",
-    "How to change my shop name?",
   ];
 
   const supportOptions = [
