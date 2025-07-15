@@ -1,6 +1,6 @@
-import { Box, Card } from '@mui/material';
-import styles from './ProductCard.module.scss';
-import { Link } from 'react-router-dom';
+import { Box, Card } from "@mui/material";
+import styles from "./ProductCard.module.scss";
+import { Link } from "react-router-dom";
 
 interface ProductCardProps {
   image: string;

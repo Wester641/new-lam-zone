@@ -1,5 +1,6 @@
 import { Box, Grid } from "@mui/material";
 import styles from "./DetailInformation.module.scss";
+import SimilarProducts from "../../features/similar_products/SimilarProducts";
 
 function DetailInformation({ product }: { product: any }) {
   return (
@@ -101,6 +102,8 @@ function DetailInformation({ product }: { product: any }) {
       <Box className={styles.productInformationAdditionalInfo}>
         Additional Info: <span>{product.sku}</span>
       </Box>
+
+      <SimilarProducts />
     </div>
   );
 }
