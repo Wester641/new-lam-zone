@@ -1,0 +1,214 @@
+.SupportSection {
+  color: black;
+  width: 100%;
+  padding-bottom: 30px;
+
+  .SupportHub {
+    width: 100%;
+
+    .SupportHub_top {
+      background-color: #f2f4f5;
+
+      .SupportHub_top_content {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+
+        .SupportHub_top_img {
+          width: 20px;
+        }
+
+        .SupportHub_top_a2 {
+          text-decoration: none;
+          color: #5f6c72;
+
+          &:hover {
+            color: #2da5f3;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .SupportSection_bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 80%;
+      margin: 50px auto 0;
+
+      @media (max-width: 1000px) {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+      }
+
+      .SupportSection_bottom_content {
+        .SupportSection_bottom_title {
+          background-color: #efd33d;
+          font-size: 14px;
+          width: 130px;
+          height: 36px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .SupportSection_bottom_subtitle {
+          font-size: 32px;
+          margin-bottom: 10px;
+
+          @media (max-width: 600px) {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .SupportSection_bottom_inputWrapper {
+        border: 1px solid #e4e7e9;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        height: 72px;
+        width: 536px;
+        justify-content: space-between;
+
+        @media (max-width: 600px) {
+          width: 100%;
+          height: auto;
+          flex-direction: column;
+          gap: 10px;
+          padding: 10px;
+        }
+
+        .SupportSection_bottom_input {
+          background-image: url(../../../assets/images/icons_For_SupportSection/MagnifyingGlass.png);
+          background-repeat: no-repeat;
+          background-position: 5px center;
+          background-size: 30px 30px;
+          padding-left: 40px;
+          background-color: #ffffff;
+          height: 50px;
+          border: none;
+          outline: none;
+          color: black;
+          font-size: 16px;
+          width: 70%;
+
+          @media (max-width: 600px) {
+            width: 100%;
+          }
+        }
+
+        .SupportSection_bottom_button {
+          height: 48px;
+          width: 108px;
+          border: none;
+          background-color: #fa8232;
+          font-size: 14px;
+        }
+      }
+
+      .SupportSection_bottom_img {
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        @media (max-width: 700px) {
+          width: 300px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .SupportBlock {
+    padding-bottom: 30px;
+
+    .SupportBlock_h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+
+    .SupportBlock_container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      width: 80%;
+      margin: 0 auto;
+
+      @media (max-width: 1000px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+      }
+
+      .SupportBlock_block {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: 2px solid #ffe7d6;
+        gap: 20px;
+
+        &:hover {
+          border: 2px solid #fa8232;
+          cursor: pointer;
+        }
+
+        .SupportBlock_block_img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+
+  .SupportSection_container {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+
+    .SupportSection_text1 {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .PopularTopics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      width: 70%;
+      margin: 0 auto;
+
+      @media (max-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+      }
+
+      .PopularTopics_block {
+        position: relative;
+        padding-left: 20px;
+        font-size: 16px;
+
+        &:before {
+          position: absolute;
+          color: #fa8232;
+          font-size: 20px;
+        }
+
+        &:hover {
+          color: #fa8232;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
