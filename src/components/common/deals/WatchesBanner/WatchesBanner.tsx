@@ -1,6 +1,9 @@
 import styles from "./WatchesBanner.module.scss";
-import watch from "../../../../assets/images/BannerClockImages/watch.png";
-import textClocks from "../../../../assets/images/BannerClockImages/textClocks.png";
+import watch from "../../../../assets/image 7.svg";
+import textClocks from "../../../../assets/image 8.svg";
+import arrowRight from "../../../../assets/ArrowRight.svg";
+import shoppingCartSimple from "../../../../assets/ShoppingCartSimple.svg";
+import { Box } from "@mui/material";
 
 export default function WatchesBanner() {
   return (
@@ -13,18 +16,24 @@ export default function WatchesBanner() {
             src={textClocks}
             alt="textClocks"
           />
-          <h1 className={styles.blocKtext_h1}>
+          <Box className={styles.blocKtext_h1}>
             Heavy on Features. Light on Price.
-          </h1>
+          </Box>
         </div>
         <div className={styles.priceBlock}>
           <p className={styles.priceBlock_p}>Only for:</p>
-          <h1 className={styles.Block}>$299 USD</h1>
+          <Box className={styles.Block}>$299 USD</Box>
         </div>
       </div>
       <div className={styles.WatchesBanner_bottom}>
-        <button className={styles.bottom1}>Add to Cart</button>
-        <button className={styles.bottom2}>View Details</button>
+        <button className={styles.bottom1}>
+          <img src={shoppingCartSimple} alt="shoppingCartSimple" />
+          <span>Add to Cart</span>
+        </button>
+        <button className={styles.bottom2}>
+          <span>View Details</span>
+          <img src={arrowRight} alt="arrowRight" />
+        </button>
       </div>
     </div>
   );
