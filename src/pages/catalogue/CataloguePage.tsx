@@ -7,19 +7,23 @@ import { products } from "../../../products";
 import CatalogueProducts from "../../components/features/catalogue_products/CatalogueProducts";
 import Category from "../../components/features/filter/Category/Category";
 import PopularTags from "../../components/features/filter/PopularTags/PopularTags";
+
+import WatchesBanner from "../../components/common/deals/WatchesBanner/WatchesBanner";
+
 import PopularBrands from "../../components/features/filter/PopularBrands/PopularBrands";
+
 function CataloguePage() {
   return (
     <Box className={styles.homePage}>
       <HeaderLayout />
       <MobileBottomNavigation />
-
       <Container className={styles.grid}>
         <Grid container spacing={2}>
           <Grid size={{ sm: 0, md: 2 }}>
             <Category />
             <PopularBrands />
             <PopularTags />
+            <WatchesBanner />
           </Grid>
           <Grid size={{ sm: 12, md: 10 }}>
             <Grid container spacing={2}>
