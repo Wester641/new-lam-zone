@@ -9,7 +9,7 @@ import ProductsDetailPage from "./pages/products/ProductsDetailPage";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import TermsOfServicePage from "./pages/terms_of_service/TermsOfServicePage";
-import CustomerSupportPage from "./pages/CustomerSupportPage/CustomerSupportPage";
+import CustomerSupportPage from "./pages/customar_support_page/CustomerSupportPage";
 
 function App() {
   return (

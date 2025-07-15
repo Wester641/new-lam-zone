@@ -25,12 +25,8 @@ export default function SupportSection() {
   const supportOptions = [
     { img: CreditCard, text: "Track Order" },
     { img: LockOpen, text: "Wishlist & Compare" },
-    { img: Notepad, text: "Reset Password" },
-    { img: Stack, text: "Shipping & Billing" },
     { img: Storefront, text: "Payment Option" },
     { img: Truck, text: "Shoping Cart & Wallet" },
-    { img: User, text: "User & Account" },
-    { img: User, text: "Sell on Clicon" },
   ];
 
   return (
