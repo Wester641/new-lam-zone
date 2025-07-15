@@ -22,6 +22,15 @@
   }
 }
 
+.grid {
+  box-sizing: border-box;
+
+  @media (min-width: 1441px) {
+    max-width: 1240px !important;
+    margin: 0 auto;
+  }
+}
+
 .gridItem:nth-child(2) {
-  @include border;
+  min-height: 100% !important;
 }

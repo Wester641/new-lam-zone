@@ -1,5 +1,5 @@
-@use '../../../../src/styles/variables' as *;
-@use '../../../../src/styles/mixins' as *;
+@use "../../../../src/styles/variables" as *;
+@use "../../../../src/styles/mixins" as *;
 
 .bottomMenuWidget {
   @include flex-center;
@@ -72,13 +72,15 @@
           gap: 10px;
         }
 
-        div.box {
+        .box {
           color: $gray-600 !important;
           @include flex-center;
           font-size: clamp(0.75rem, 2.5vw, 1rem) !important;
           flex-shrink: 0;
           min-width: 100px;
           gap: 5px;
+
+          text-decoration: none;
 
           @media (max-width: 375px) {
             font-size: 0.75rem !important;

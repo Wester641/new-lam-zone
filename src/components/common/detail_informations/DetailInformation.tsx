@@ -104,6 +104,7 @@ function DetailInformation({ product }: { product: any }) {
       </Box>
 
       <SimilarProducts />
+      <SimilarProducts />
     </div>
   );
 }

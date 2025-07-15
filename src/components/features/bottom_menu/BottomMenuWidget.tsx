@@ -1,12 +1,13 @@
-import Box from '@mui/material/Box';
-import styles from './BottomMenuWidget.module.scss';
-import { Container, Grid } from '@mui/material';
-import SelectedMenu from '../../common/select/SelectedMenu';
-import HeadsetIcon from '@mui/icons-material/Headset';
-import CompareArrowsIcon from '@mui/icons-material/CompareArrows';
-import PinDropIcon from '@mui/icons-material/PinDrop';
-import ErrorIcon from '@mui/icons-material/Error';
-import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import Box from "@mui/material/Box";
+import styles from "./BottomMenuWidget.module.scss";
+import { Container, Grid } from "@mui/material";
+import SelectedMenu from "../../common/select/SelectedMenu";
+import HeadsetIcon from "@mui/icons-material/Headset";
+import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
+import PinDropIcon from "@mui/icons-material/PinDrop";
+import ErrorIcon from "@mui/icons-material/Error";
+import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+import { Link } from "react-router-dom";
 
 export default function BottomMenuWidget() {
   return (
@@ -22,22 +23,22 @@ export default function BottomMenuWidget() {
           </Grid>
           <Grid className={styles.gridItems} size={{ xs: 12, sm: 12, md: 8 }}>
             <Box className={styles.boxContainer}>
-              <div className={styles.box}>
+              <Link to="/#" className={styles.box}>
                 <PinDropIcon />
                 <span>Track Order</span>
-              </div>
-              <div className={styles.box}>
+              </Link>
+              <Link to="/#" className={styles.box}>
                 <CompareArrowsIcon />
                 <span>Compare</span>
-              </div>
-              <div className={styles.box}>
+              </Link>
+              <Link to="/customer-support" className={styles.box}>
                 <HeadsetIcon />
                 <span>Customer Support</span>
-              </div>
-              <div className={styles.box}>
+              </Link>
+              <Link to="/#" className={styles.box}>
                 <ErrorIcon />
                 <span>Need Help</span>
-              </div>
+              </Link>
             </Box>
           </Grid>
           <Grid className={styles.gridItems} size={{ md: 2 }}>
