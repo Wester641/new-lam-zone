@@ -1,0 +1,108 @@
+.ContactUs {
+    color: black;
+    background-color: #f2f4f5;
+    padding: 50px 0;
+
+    .ContactUs_topText {
+        width: 40%;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 20px;
+
+        @media (max-width: 800px) {
+            width: 80%;
+        }
+
+        .ContactUs_topText_button {
+            background-color: #2da5f3;
+            padding: 10px;
+            display: flex;
+            margin: 0 auto;
+            color: white;
+            border: none;
+
+            &:hover {
+                background-color: blue;
+            }
+        }
+
+        .ContactUs_topText_h1 {
+            display: flex;
+            margin: 20px auto 40px;
+            width: 400px;
+            font-size: 32px;
+            text-align: center;
+
+            @media (max-width: 800px) {
+                width: 100%;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .ContactUs_bottom {
+        display: flex;
+        gap: 40px;
+        margin: 0 auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+
+        .ContactUs_containe {
+            background-color: #ffffff;
+            width: 30%;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+
+            @media (max-width: 1000px) {
+                width: 45%;
+            }
+
+            @media (max-width: 600px) {
+                width: 80%;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .ContactUs_containe_img {
+                padding: 10px;
+                width: 100px;
+                height: 100px;
+
+                @media (max-width: 600px) {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .ContactUs_containe_block {
+                display: flex;
+                flex-direction: column;
+                padding-left: 10px;
+
+                @media (max-width: 600px) {
+                    padding-left: 0;
+                }
+
+                .text1 {
+                    margin: 5px 0;
+                    font-size: 16px;
+                }
+
+                .block_button {
+                    margin-top: 20px;
+                    background-color: #2da5f3;
+                    width: 120px;
+                    padding: 10px;
+                    border: none;
+                    color: white;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: blue;
+                    }
+                }
+            }
+        }
+    }
+}

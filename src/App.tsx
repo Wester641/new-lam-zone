@@ -9,13 +9,13 @@ import ProductsDetailPage from "./pages/products/ProductsDetailPage";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import TermsOfServicePage from "./pages/terms_of_service/TermsOfServicePage";
+import CustomerSupportPage from "./pages/CustomerSupportPage/CustomerSupportPage";
 
 function App() {
   return (
     <BrowserRouter>
       {/* <RouteScrollToTop /> */}
       {/* asd// */}
-
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/catalogue" element={<CataloguePage />} />
@@ -24,6 +24,7 @@ function App() {
         <Route path="/account" element={<AccountPage />} />
         <Route path="/product/:id" element={<ProductsDetailPage />} />
         <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+        <Route path="/customer-support" element={<CustomerSupportPage />} />
       </Routes>
     </BrowserRouter>
   );
