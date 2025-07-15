@@ -8,7 +8,6 @@ import Truck from "../../../assets/images/icons_For_SupportSection/Truck.svg";
 import User from "../../../assets/images/icons_For_SupportSection/User.svg";
 import man_with_laptop from "../../../assets/images/icons_For_SupportSection/man with laptop1.png";
 import { Box } from "@mui/material";
-import House from "../../../assets/images/icons_For_SupportSection/House.png";
 
 export default function SupportSection() {
   const block = [
