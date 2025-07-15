@@ -1,46 +1,54 @@
+@use "../../../../styles/variables" as *;
+@use "../../../../styles/mixins" as *;
+
 .Category {
-    padding-bottom: 30px;
-    border-bottom: 1px solid #E4E7E9;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $border-color;
 
-    .Category_h1 {
-        font-size: 16px;
+  @media (max-width: 600px) {
+    display: none;
+  }
+
+  .Category_h1 {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .checkbox {
+    .radioLabel {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      input[type="radio"] {
+        display: none;
+      }
+
+      .checkbox_p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: $text-color-light;
+      }
+
+      .customRadio {
+        width: 18px;
+        height: 18px;
+        border: 1px solid $border-color3;
+        border-radius: 50%;
+        position: relative;
+      }
+
+      input[type="radio"]:checked + .customRadio::after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -1px;
+        width: 6px;
+        height: 6px;
+        border: 8px solid $orange-color;
+        border-radius: 50%;
+      }
     }
-
-    .checkbox {
-        .radioLabel {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-
-            input[type="radio"] {
-                display: none;
-            }
-
-            .checkbox_p {
-                margin-top: 5px;
-                margin-bottom: 5px;
-                font-size: 14px;
-                color: #475156;
-            }
-
-            .customRadio {
-                width: 18px;
-                height: 18px;
-                border: 1px solid #88837f;
-                border-radius: 50%;
-                position: relative;
-            }
-
-            input[type="radio"]:checked+.customRadio::after {
-                content: "";
-                position: absolute;
-                top: -2px;
-                left: -1px;
-                width: 6px;
-                height: 6px;
-                border: 8px solid #FA8232;
-                border-radius: 50%;
-            }
-        }
-    }
+  }
 }

@@ -1,31 +1,36 @@
+@use "../../../../styles/variables" as *;
+@use "../../../../styles/mixins" as *;
+
 .PopularTags {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+
+  .PopularTag_h1 {
+    color: $text-color;
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+
+  .PopularTagBlock {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
 
-    .PopularTag_h1 {
-        color: #000000;
-        margin-bottom: 5px;
-        font-size: 16px;
+    .button1 {
+      background-color: $white-color;
+      border: 1px solid $border-color;
+      color: $text-color-light;
+      font-size: 14px;
+      padding: 10px;
+
+      &:hover {
+        color: $orange-color;
+        border: 1px solid $orange-color;
+      }
     }
-
-    .PopularTagBlock {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-
-        .button1 {
-            background-color: rgb(255, 255, 255);
-            border: 1px solid #E4E7E9;
-            color: #475156;
-            font-size: 14;
-            padding: 10px;
-
-            &:hover {
-                color: #FA8232;
-                border: 1px solid #FA8232;
-            }
-        }
-    }
-
-
+  }
 }
