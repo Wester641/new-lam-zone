@@ -3,7 +3,6 @@ import CreditCard from "../../../assets/images/icons_For_SupportSection/CreditCa
 import LockOpen from "../../../assets/images/icons_For_SupportSection/LockOpen.svg";
 import Storefront from "../../../assets/images/icons_For_SupportSection/Storefront.svg";
 import Truck from "../../../assets/images/icons_For_SupportSection/Truck.svg";
-import man_with_laptop from "../../../assets/images/icons_For_SupportSection/man_with_laptop1.jpg";
 import { Box } from "@mui/material";
 
 export default function SupportSection() {
@@ -29,7 +28,9 @@ export default function SupportSection() {
         <div className={styles.SupportSection_bottom}>
           <img
             className={styles.SupportSection_bottom_img}
-            src={man_with_laptop}
+            src={
+              "https://res.cloudinary.com/dx2cycu19/image/upload/v1752593152/man_with_laptop1_koogx0.jpg"
+            }
             alt="Support Illustration"
           />
         </div>

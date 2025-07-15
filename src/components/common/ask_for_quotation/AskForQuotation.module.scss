@@ -6,13 +6,12 @@
   box-sizing: border-box;
   padding: 0 15px;
   height: 970px !important;
+  position: sticky;
+  top: 0;
 
   @media (max-width: 768px) {
     height: 100% !important;
   }
-
-  position: sticky;
-  top: 0;
 }
 
 .formContainer {
