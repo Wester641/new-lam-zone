@@ -1,10 +1,14 @@
+import { Box, TextField } from "@mui/material";
+import ButtonComponent from "../button/Button";
 import styles from "./AskForSupport.module.scss";
 
 export default function AskForSupport() {
   return (
-    <div className={styles.AskForSupport}>
-      <h1>Don’t find your answer, Ask for support.</h1>
-      <p>
+    <Box className={styles.AskForSupport}>
+      <h1 className={styles.AskForSupport_h1}>
+        Don’t find your answer, Ask for support.
+      </h1>
+      <p className={styles.AskForSupport_p}>
         Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed
         molestie accumsan dui, non iaculis primis in faucibu raesent eget sem
         purus.
@@ -21,15 +25,14 @@ export default function AskForSupport() {
           type="text"
           placeholder="Subject"
         />
-        <input
+        <TextField
           className={styles.AskForSupport_container_inputMessag}
-          type="text"
           placeholder="Message (Optional)"
+          variant="standard"
+          InputProps={{ disableUnderline: true }}
         />
-        <button className={styles.AskForSupport_container_button}>
-          Send message
-        </button>
+        <ButtonComponent text="Send message" />
       </div>
-    </div>
+    </Box>
   );
 }

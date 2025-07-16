@@ -1,6 +1,6 @@
 .FrequentlyAskedQuestions {
     color: black;
-    width: 760px;
+    width: 100%;
 
     .FrequentlyAskedQuestions_container {
         display: flex;
@@ -11,11 +11,25 @@
             font-size: 32px;
             margin-top: 0;
             margin-bottom: 20px;
+            font-weight: 600;
         }
 
         .FrequentlyAskedQuestions_block {
             width: 100%;
-            border: 1px solid #E4E7E9
+            border: 1px solid #E4E7E9;
+
+
+            .FrequentlyAskedQuestions_block_text1 {
+                font-weight: 500;
+                font-size: 18px;
+            }
+
+            .FrequentlyAskedQuestions_block_text2 {
+                font-weight: 400;
+                font-size: 14px;
+                color: #475156;
+            }
+
         }
     }
 }

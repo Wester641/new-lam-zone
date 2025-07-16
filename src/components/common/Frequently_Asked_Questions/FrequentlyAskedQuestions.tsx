@@ -83,15 +83,27 @@ export default function FrequentlyAskedQuestions() {
               }}
               expandIcon={<ExpandMoreIcon />}
             >
-              <p>{faqList.text1}</p>
+              <p className={styles.FrequentlyAskedQuestions_block_text1}>
+                {faqList.text1}
+              </p>
             </AccordionSummary>
             <AccordionDetails>
-              <p>{faqList.text2}</p>
+              <p className={styles.FrequentlyAskedQuestions_block_text2}>
+                {faqList.text2}
+              </p>
               <ul>
-                <li>{faqList.text3}</li>
-                <li>{faqList.text4}</li>
-                <li>{faqList.text5}</li>
-                <li>{faqList.text6}</li>
+                <li className={styles.FrequentlyAskedQuestions_block_text2}>
+                  {faqList.text3}
+                </li>
+                <li className={styles.FrequentlyAskedQuestions_block_text2}>
+                  {faqList.text4}
+                </li>
+                <li className={styles.FrequentlyAskedQuestions_block_text2}>
+                  {faqList.text5}
+                </li>
+                <li className={styles.FrequentlyAskedQuestions_block_text2}>
+                  {faqList.text6}
+                </li>
               </ul>
             </AccordionDetails>
           </Accordion>

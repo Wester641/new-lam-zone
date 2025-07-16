@@ -1,15 +1,19 @@
-import { Button } from '@mui/material';
-import styles from './Button.module.scss';
-import { ArrowForward } from '@mui/icons-material';
+import { Button } from "@mui/material";
+import styles from "./Button.module.scss";
+import { ArrowForward } from "@mui/icons-material";
 
-function ButtonComponent() {
+type ButtonComponentProps = {
+  text?: string;
+};
+
+function ButtonComponent({ text = "Shop Now" }: ButtonComponentProps) {
   return (
     <Button
       variant="contained"
       href="#contained-buttons"
       className={styles.button}
     >
-      <div>Shop Now</div>
+      <div>{text}</div>
       <ArrowForward />
     </Button>
   );
