@@ -9,6 +9,7 @@ import ProductsDetailPage from "./pages/products/ProductsDetailPage";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import TermsOfServicePage from "./pages/terms_of_service/TermsOfServicePage";
+import FAQsPage from "./pages/FAQsPage/FAQsPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/account" element={<AccountPage />} />
         <Route path="/product/:id" element={<ProductsDetailPage />} />
         <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+        <Route path="/fAQs-page" element={<FAQsPage />} />
       </Routes>
     </BrowserRouter>
   );
