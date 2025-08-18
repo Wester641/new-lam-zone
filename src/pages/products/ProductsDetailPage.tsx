@@ -31,7 +31,7 @@ function ProductsDetailPage() {
       <HeaderLayout />
       <MobileBottomNavigation />
       <Container className={styles.grid}>
-        <Grid container>
+        <Grid container className={styles.grid}>
           <Grid size={{ xs: 12, md: 9 }} className={styles.gridItem}>
             <DetailInformation product={product} />
           </Grid>

@@ -1,8 +1,8 @@
-import { Autocomplete, Box, Button, Checkbox, TextField } from '@mui/material';
-import styles from './AskForQuotation.module.scss';
-import { useForm, type SubmitHandler, Controller } from 'react-hook-form';
-import { Link } from 'react-router-dom';
-import { countries } from '../../../utils/Constans';
+import { Autocomplete, Box, Button, Checkbox, TextField } from "@mui/material";
+import styles from "./AskForQuotation.module.scss";
+import { useForm, type SubmitHandler, Controller } from "react-hook-form";
+import { Link } from "react-router-dom";
+import { countries } from "../../../utils/Constans";
 
 type Inputs = {
   order_quantity: string;
@@ -16,11 +16,11 @@ type Inputs = {
 };
 
 export default function AskForQuotation({ product }: any) {
-  const defaultCountry = countries.includes('United Arab Emirates')
-    ? 'United Arab Emirates'
+  const defaultCountry = countries.includes("United Arab Emirates")
+    ? "United Arab Emirates"
     : countries[0] || null;
 
-  const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+  const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
   const {
     register,
@@ -31,17 +31,17 @@ export default function AskForQuotation({ product }: any) {
   } = useForm<Inputs>({
     defaultValues: {
       order_quantity: product.id.toString(),
-      additional_information: '',
-      email: '',
-      re_enter_email: '',
-      company_name: '',
-      your_name: '',
+      additional_information: "",
+      email: "",
+      re_enter_email: "",
+      company_name: "",
+      your_name: "",
       country: defaultCountry,
     },
   });
 
-  const onSubmit: SubmitHandler<Inputs> = data => {
-    console.log('Данные формы:', data);
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    console.log("Данные формы:", data);
     reset();
   };
 
@@ -55,7 +55,7 @@ export default function AskForQuotation({ product }: any) {
             id="order-quantity-input"
             label="Order Quantity"
             error={!!errors.order_quantity}
-            {...register('order_quantity', { required: true })}
+            {...register("order_quantity", { required: true })}
           />
           <div className={styles.textInTextField}>Unit</div>
         </Box>
@@ -69,7 +69,7 @@ export default function AskForQuotation({ product }: any) {
             id="additional-info-textarea"
             label="Additional Information "
             placeholder="Details you would like to include."
-            {...register('additional_information', { required: true })}
+            {...register("additional_information", { required: true })}
           />
         </Box>
       </Box>
@@ -83,7 +83,7 @@ export default function AskForQuotation({ product }: any) {
             id="email"
             label="Email Address"
             error={!!errors.email}
-            {...register('email', { required: true })}
+            {...register("email", { required: true })}
           />
         </Box>
         <Box className={styles.formControlGroup}>
@@ -93,7 +93,7 @@ export default function AskForQuotation({ product }: any) {
             id="re-enter-email"
             label="Re-Enter Email Address"
             error={!!errors.re_enter_email}
-            {...register('re_enter_email', { required: true })}
+            {...register("re_enter_email", { required: true })}
           />
         </Box>
         <Box className={styles.formControlGroup}>
@@ -103,7 +103,7 @@ export default function AskForQuotation({ product }: any) {
             id="company-name"
             label="Company Name"
             error={!!errors.company_name}
-            {...register('company_name', { required: true })}
+            {...register("company_name", { required: true })}
           />
         </Box>
         <Box className={styles.formControlGroup}>
@@ -113,14 +113,14 @@ export default function AskForQuotation({ product }: any) {
             id="your-name"
             label="Your Name"
             error={!!errors.your_name}
-            {...register('your_name', { required: true })}
+            {...register("your_name", { required: true })}
           />
         </Box>
 
         <Controller
           name="country"
           control={control}
-          rules={{ required: 'Пожалуйста, выберите страну' }}
+          rules={{ required: "Пожалуйста, выберите страну" }}
           render={({ field }) => (
             <Autocomplete
               {...field}
@@ -128,7 +128,7 @@ export default function AskForQuotation({ product }: any) {
               value={field.value}
               onChange={(_event, newValue) => field.onChange(newValue)}
               isOptionEqualToValue={(option, value) => option === value}
-              renderInput={params => (
+              renderInput={(params) => (
                 <TextField
                   {...params}
                   label="Country"
@@ -136,21 +136,21 @@ export default function AskForQuotation({ product }: any) {
                   helperText={errors.country && errors.country.message}
                 />
               )}
-              sx={{ width: '100%' }}
+              sx={{ width: "100%" }}
             />
           )}
         />
 
         <Box className={styles.formControlGroup_2}>
           <Checkbox
-            {...register('checked')}
+            {...register("checked")}
             className={styles.checkbox}
             {...label}
           />
           <div className={styles.span}>
             An account will be created for you and by continuing, you understand
             that our services are for business purpose only and you understand
-            and agree to our{' '}
+            and agree to our{" "}
             <Link className={styles.link} to="/terms-of-service">
               Terms of Service.
             </Link>
