@@ -18,7 +18,7 @@ const BurgerMenu = () => {
     setOpen((prevOpen) => !prevOpen);
   };
 
-  const handleClose = (event: MouseEvent | TouchEvent) => {
+  const handleClose = () => {
     if (anchorRef.current) {
       return;
     }
@@ -30,7 +30,7 @@ const BurgerMenu = () => {
     setSubmenuOpen((prev) => !prev);
   };
 
-  const [items, setItems] = useState([
+  const items = [
     "All",
     "iPhone",
     " Sansung",
@@ -42,9 +42,9 @@ const BurgerMenu = () => {
     "Huawei",
     "Infinix",
     "Tecno",
-  ]);
+  ];
 
-  const [items2, setItems2] = useState([
+  const items2 = [
     " Computer & Laptop",
     " Computer Accessories",
     " SmartPhone",
@@ -56,7 +56,7 @@ const BurgerMenu = () => {
     " Watchs & Accessories",
     " GPS & Navigation",
     " Warable Technology",
-  ]);
+  ];
 
   return (
     <div>
