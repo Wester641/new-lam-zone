@@ -9,7 +9,11 @@ import ProductsDetailPage from "./pages/products/ProductsDetailPage";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import TermsOfServicePage from "./pages/terms_of_service/TermsOfServicePage";
+
+import FAQsPage from "./pages/FAQsPage/FAQsPage";
+
 import CustomerSupportPage from "./pages/customar_support_page/CustomerSupportPage";
+
 
 function App() {
   return (
@@ -24,7 +28,11 @@ function App() {
         <Route path="/account" element={<AccountPage />} />
         <Route path="/product/:id" element={<ProductsDetailPage />} />
         <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+
+        <Route path="/fAQs-page" element={<FAQsPage />} />
+
         <Route path="/customer-support" element={<CustomerSupportPage />} />
+
       </Routes>
     </BrowserRouter>
   );

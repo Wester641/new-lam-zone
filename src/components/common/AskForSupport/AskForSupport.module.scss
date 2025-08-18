@@ -1,0 +1,61 @@
+.AskForSupport {
+    width: 70%;
+    background-color: #FBF4CE;
+    padding: 32px;
+    color: black;
+
+    .AskForSupport_h1 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .AskForSupport_p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #475156;
+    }
+
+    .AskForSupport_container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .AskForSupport_container_input {
+            padding-left: 16px;
+            height: 44px;
+            background-color: #ffffff;
+            border: none;
+            outline: none;
+            color: black;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .AskForSupport_container_inputMessag {
+            padding-left: 16px;
+            height: 88px;
+            background-color: #ffffff;
+            border: none;
+            outline: none;
+            color: black;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+
+
+
+    }
+}
+
+@media (max-width: 760px) {
+    .AskForSupport {
+        width: 70%;
+        padding: 24px;
+        margin: 0 auto;
+    }
+
+    .AskForSupport_container_button {
+        width: 100%;
+    }
+}
