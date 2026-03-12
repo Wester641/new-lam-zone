@@ -1,7 +1,7 @@
-import Box from '@mui/material/Box';
-import styles from './BlackFridayWidget.module.scss';
-import { Button, Container, Grid } from '@mui/material';
-import { ArrowForward, Close } from '@mui/icons-material';
+import Box from "@mui/material/Box";
+import styles from "./BlackFridayWidget.module.scss";
+import { Button, Container, Grid } from "@mui/material";
+import { ArrowForward, Close } from "@mui/icons-material";
 
 export default function BlackFridayWidget() {
   return (
@@ -24,6 +24,7 @@ export default function BlackFridayWidget() {
           <Grid size={{ sm: 5, md: 3 }} className={styles.gridItems}>
             <Button
               variant="outlined"
+              href="/catalogue"
               className={styles.shopNow}
               endIcon={<ArrowForward />}
             >

@@ -8,11 +8,7 @@ type ButtonComponentProps = {
 
 function ButtonComponent({ text = "Shop Now" }: ButtonComponentProps) {
   return (
-    <Button
-      variant="contained"
-      href="#contained-buttons"
-      className={styles.button}
-    >
+    <Button variant="contained" href="/catalogue" className={styles.button}>
       <div>{text}</div>
       <ArrowForward />
     </Button>

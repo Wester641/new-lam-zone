@@ -1,8 +1,7 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useCallback } from "react";
 import Button from "@mui/material/Button";
 import Popper from "@mui/material/Popper";
 import Paper from "@mui/material/Paper";
-import ClickAwayListener from "@mui/material/ClickAwayListener";
 import MenuList from "@mui/material/MenuList";
 import MenuItem from "@mui/material/MenuItem";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -11,56 +10,161 @@ import styles from "./SelectedMenu.module.scss";
 
 const BurgerMenu = () => {
   const [open, setOpen] = useState(false);
-  const [submenuOpen, setSubmenuOpen] = useState(false);
+  const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const anchorRef = useRef<HTMLButtonElement | null>(null);
   const submenuRef = useRef<HTMLLIElement | null>(null);
-  const handleToggle = () => {
-    setOpen((prevOpen) => !prevOpen);
+  const closeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const submenuCloseTimeout = useRef<ReturnType<typeof setTimeout> | null>(
+    null,
+  );
+
+  const clearCloseTimeout = useCallback(() => {
+    if (closeTimeout.current) {
+      clearTimeout(closeTimeout.current);
+      closeTimeout.current = null;
+    }
+  }, []);
+
+  const clearSubmenuCloseTimeout = useCallback(() => {
+    if (submenuCloseTimeout.current) {
+      clearTimeout(submenuCloseTimeout.current);
+      submenuCloseTimeout.current = null;
+    }
+  }, []);
+
+  const handleOpen = () => {
+    clearCloseTimeout();
+    setOpen(true);
   };
 
   const handleClose = () => {
-    if (anchorRef.current) {
-      return;
-    }
-    setOpen(false);
-    setSubmenuOpen(false);
+    closeTimeout.current = setTimeout(() => {
+      setOpen(false);
+      setActiveCategory(null);
+    }, 150);
   };
 
-  const handleSubmenuToggle = () => {
-    setSubmenuOpen((prev) => !prev);
+  const handleSubmenuOpen = (category: string) => {
+    clearSubmenuCloseTimeout();
+    setActiveCategory(category);
   };
 
-  const items = [
-    "All",
-    "iPhone",
-    " Sansung",
-    "Realme",
-    "Xiaomi",
-    "Oppo",
-    "Vivo",
-    "OnePlus",
-    "Huawei",
-    "Infinix",
-    "Tecno",
-  ];
+  const handleSubmenuClose = () => {
+    submenuCloseTimeout.current = setTimeout(() => {
+      setActiveCategory(null);
+    }, 200);
+  };
 
-  const items2 = [
-    " Computer & Laptop",
-    " Computer Accessories",
-    " SmartPhone",
-    "Headphone",
-    "  Mobile Accessories",
-    "  Gaming Console",
-    " Camera & Photo",
-    " TV & Homes Appliances",
-    " Watchs & Accessories",
-    " GPS & Navigation",
-    " Warable Technology",
-  ];
+  const handleSubmenuPaperEnter = () => {
+    clearCloseTimeout();
+    clearSubmenuCloseTimeout();
+  };
+
+  const categories: Record<string, string[]> = {
+    "Computer & Laptop": [
+      "All Laptops",
+      "Gaming Laptops",
+      "Business Laptops",
+      "MacBooks",
+      "Chromebooks",
+      "Desktop PCs",
+      "All-in-One PCs",
+    ],
+    "Computer Accessories": [
+      "Keyboards",
+      "Mice",
+      "Monitors",
+      "Webcams",
+      "USB Hubs",
+      "Laptop Bags",
+      "Cooling Pads",
+    ],
+    SmartPhone: [
+      "iPhone",
+      "Samsung",
+      "Xiaomi",
+      "Realme",
+      "Oppo",
+      "Vivo",
+      "OnePlus",
+      "Huawei",
+      "Infinix",
+      "Tecno",
+    ],
+    Headphone: [
+      "Wireless Headphones",
+      "Wired Headphones",
+      "Earbuds",
+      "Gaming Headsets",
+      "Noise Cancelling",
+      "Sports Earphones",
+    ],
+    "Mobile Accessories": [
+      "Phone Cases",
+      "Screen Protectors",
+      "Chargers",
+      "Power Banks",
+      "Phone Holders",
+      "Cables",
+    ],
+    "Gaming Console": [
+      "PlayStation 5",
+      "Xbox Series X",
+      "Nintendo Switch",
+      "Gaming Controllers",
+      "VR Headsets",
+      "Gaming Accessories",
+    ],
+    "Camera & Photo": [
+      "DSLR Cameras",
+      "Mirrorless Cameras",
+      "Action Cameras",
+      "Camera Lenses",
+      "Tripods",
+      "Camera Bags",
+    ],
+    "TV & Home Appliances": [
+      "Smart TVs",
+      "OLED TVs",
+      "Soundbars",
+      "Projectors",
+      "Streaming Devices",
+      "TV Mounts",
+    ],
+    "Watches & Accessories": [
+      "Smart Watches",
+      "Apple Watch",
+      "Samsung Watch",
+      "Watch Bands",
+      "Watch Chargers",
+      "Fitness Trackers",
+    ],
+    "GPS & Navigation": [
+      "Car GPS",
+      "Handheld GPS",
+      "GPS Trackers",
+      "Dash Cams",
+      "GPS Accessories",
+    ],
+    "Wearable Technology": [
+      "Fitness Bands",
+      "Smart Glasses",
+      "Smart Rings",
+      "Health Monitors",
+      "Wearable Cameras",
+    ],
+  };
 
   return (
-    <div>
-      <Button ref={anchorRef} onClick={handleToggle} className={styles.button}>
+    <div
+      onMouseLeave={handleClose}
+      style={{ position: "relative", zIndex: 1300 }}
+    >
+      <Button
+        ref={anchorRef}
+        onMouseEnter={handleOpen}
+        className={styles.button}
+      >
         Categories
         <KeyboardArrowDownIcon sx={{ fontSize: 20, marginLeft: "5px" }} />
       </Button>
@@ -68,35 +172,50 @@ const BurgerMenu = () => {
         open={open}
         anchorEl={anchorRef.current}
         placement="bottom-start"
-        modifiers={[{ name: "offset", options: { offset: [0, 10] } }]}
+        disablePortal
+        modifiers={[{ name: "offset", options: { offset: [0, 4] } }]}
       >
-        <ClickAwayListener onClickAway={handleClose}>
-          <Paper>
-            <MenuList autoFocusItem={open}>
-              {items2.map((item, index) => (
+        <Paper onMouseEnter={clearCloseTimeout} onMouseLeave={handleClose}>
+          <MenuList>
+            {Object.keys(categories).map((category, index) => (
+              <div key={index}>
+                <MenuItem
+                  ref={activeCategory === category ? submenuRef : undefined}
+                  onMouseEnter={() => handleSubmenuOpen(category)}
+                  onMouseLeave={handleSubmenuClose}
+                >
+                  {category}
+                </MenuItem>
+              </div>
+            ))}
+          </MenuList>
+        </Paper>
+      </Popper>
+      <Popper
+        open={activeCategory !== null}
+        anchorEl={submenuRef.current}
+        placement="right-start"
+        disablePortal
+        modifiers={[{ name: "offset", options: { offset: [0, 0] } }]}
+      >
+        <Paper
+          onMouseEnter={handleSubmenuPaperEnter}
+          onMouseLeave={handleSubmenuClose}
+        >
+          <MenuList>
+            {activeCategory &&
+              categories[activeCategory].map((item, index) => (
                 <div key={index}>
-                  <MenuItem ref={submenuRef} onClick={handleSubmenuToggle}>
+                  <MenuItem
+                    onClick={() => {
+                      setOpen(false);
+                      setActiveCategory(null);
+                    }}
+                  >
                     {item}
                   </MenuItem>
                 </div>
               ))}
-            </MenuList>
-          </Paper>
-        </ClickAwayListener>
-      </Popper>
-      <Popper
-        open={submenuOpen}
-        anchorEl={submenuRef.current}
-        placement="right-start"
-        modifiers={[{ name: "offset", options: { offset: [0, 0] } }]}
-      >
-        <Paper>
-          <MenuList>
-            {items.map((item, index) => (
-              <div key={index}>
-                <MenuItem onClick={handleClose}>{item} </MenuItem>
-              </div>
-            ))}
           </MenuList>
         </Paper>
       </Popper>
