@@ -1,4 +1,6 @@
-export const products = [
+import type { Product } from "./src/types/product";
+
+export const products: Product[] = [
   {
     id: 1,
     stock_state: "Available",
@@ -249,7 +251,7 @@ export const products = [
   },
 ];
 
-export const newStockAvailable = [
+export const newStockAvailable: Product[] = [
   {
     id: 1,
     stock_state: "Available",
@@ -437,7 +439,7 @@ export const newStockAvailable = [
     tags: ["Macbook", "Pro", "16", "512", "M3pro", "512gb", "2023", "A2991"],
   },
 ];
-export const StockAvailableProducts = [
+export const StockAvailableProducts: Product[] = [
   {
     id: 1,
     stock_state: "Available",
@@ -764,7 +766,7 @@ export const StockAvailableProducts = [
     ],
   },
 ];
-export const StockProducts = [
+export const StockProducts: Product[] = [
   {
     id: 1,
     stock_state: "Available",
@@ -926,7 +928,7 @@ export const StockProducts = [
     ],
   },
 ];
-export const StockAvailable = [
+export const StockAvailable: Product[] = [
   {
     id: 1,
     stock_state: "Available",

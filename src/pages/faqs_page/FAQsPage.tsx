@@ -1,9 +1,9 @@
 import styles from "./FAQsPage.module.scss";
 import Footer from "../../components/layout/footer/FooterLayout";
 import Header from "../../components/layout/header/HeaderLayout";
-import FrequentlyAskedQuestions from "../../components/common/Frequently_Asked_Questions/FrequentlyAskedQuestions";
+import FrequentlyAskedQuestions from "../../components/common/frequently_asked_questions/FrequentlyAskedQuestions";
 import { Box, Container, Grid } from "@mui/material";
-import AskForSupport from "../../components/common/AskForSupport/AskForSupport";
+import AskForSupport from "../../components/common/ask_for_support/AskForSupport";
 
 export default function FAQsPage() {
   return (

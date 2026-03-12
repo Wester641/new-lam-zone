@@ -1,8 +1,9 @@
 import { Box, Grid } from "@mui/material";
 import styles from "./DetailInformation.module.scss";
 import SimilarProducts from "../../features/similar_products/SimilarProducts";
+import type { Product } from "../../../types/product";
 
-function DetailInformation({ product }: { product: any }) {
+function DetailInformation({ product }: { product: Product }) {
   return (
     <div>
       <Box className={styles.box}>
@@ -42,10 +43,10 @@ function DetailInformation({ product }: { product: any }) {
             {/* <span className={styles.border}></span> */}
             <Box className={styles.asideInfo}>
               <span>
-                Color: <strong>{product.color}</strong>
+                Color: <strong>{product.colors?.join(", ")}</strong>
               </span>
               <span>
-                Size: <strong>{product.size}</strong>
+                Size:
                 <select name="size" id="">
                   <option value="">Select Size</option>
                   <option value="">13-inch</option>
@@ -54,7 +55,7 @@ function DetailInformation({ product }: { product: any }) {
                 </select>
               </span>
               <span>
-                Memory: <strong>{product.memory}</strong>
+                Memory:
                 <select name="memory" id="">
                   <option value="">Select Memory</option>
                   <option value="">8GB unified memory</option>
@@ -63,7 +64,7 @@ function DetailInformation({ product }: { product: any }) {
                 </select>
               </span>
               <span>
-                Storage: <strong>{product.storage}</strong>
+                Storage:
                 <select name="storage" id="">
                   <option value="">Select Storage</option>
                   <option value="">128GB unified storage</option>

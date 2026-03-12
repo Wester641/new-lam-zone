@@ -2,7 +2,8 @@ import { Autocomplete, Box, Button, Checkbox, TextField } from "@mui/material";
 import styles from "./AskForQuotation.module.scss";
 import { useForm, type SubmitHandler, Controller } from "react-hook-form";
 import { Link } from "react-router-dom";
-import { countries } from "../../../utils/Constans";
+import { countries } from "../../../utils/Constants";
+import type { Product } from "../../../types/product";
 
 type Inputs = {
   order_quantity: string;
@@ -15,7 +16,7 @@ type Inputs = {
   checked: boolean;
 };
 
-export default function AskForQuotation({ product }: any) {
+export default function AskForQuotation({ product }: { product: Product }) {
   const defaultCountry = countries.includes("United Arab Emirates")
     ? "United Arab Emirates"
     : countries[0] || null;

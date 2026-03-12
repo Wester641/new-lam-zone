@@ -4,13 +4,13 @@ import { MobileBottomNavigation } from "../../components/common/header_component
 import FooterLayout from "../../components/layout/footer/FooterLayout";
 import styles from "./CataloguePage.module.scss";
 import { products } from "../../../products";
-import CatalogueProducts from "../../components/features/catalogue_products/CatalogueProducts";
-import Category from "../../components/features/filter/Category/Category";
-import PopularTags from "../../components/features/filter/PopularTags/PopularTags";
+import ProductCard from "../../components/features/products/ProductCard";
+import Category from "../../components/features/filter/category/Category";
+import PopularTags from "../../components/features/filter/popular_tags/PopularTags";
 
-import WatchesBanner from "../../components/common/deals/WatchesBanner/WatchesBanner";
+import WatchesBanner from "../../components/common/deals/watches_banner/WatchesBanner";
 
-import PopularBrands from "../../components/features/filter/PopularBrands/PopularBrands";
+import PopularBrands from "../../components/features/filter/popular_brands/PopularBrands";
 
 function CataloguePage() {
   return (
@@ -29,12 +29,13 @@ function CataloguePage() {
             <Grid container spacing={2}>
               {products.map((product, index) => (
                 <Grid size={{ sm: 6, md: 2 }} key={index}>
-                  <CatalogueProducts
+                  <ProductCard
                     id={`${product.id}`}
                     state="Featured"
                     image={product.image}
                     title={product.title}
                     price={product.price}
+                    variant="catalogue"
                   />
                 </Grid>
               ))}

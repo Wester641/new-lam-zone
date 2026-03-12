@@ -1,8 +1,8 @@
 import styles from "./SupportSection.module.scss";
-import CreditCard from "../../../assets/images/icons_For_SupportSection/CreditCard.svg";
-import LockOpen from "../../../assets/images/icons_For_SupportSection/LockOpen.svg";
-import Storefront from "../../../assets/images/icons_For_SupportSection/Storefront.svg";
-import Truck from "../../../assets/images/icons_For_SupportSection/Truck.svg";
+import CreditCard from "../../../assets/images/icons_for_support_section/CreditCard.svg";
+import LockOpen from "../../../assets/images/icons_for_support_section/LockOpen.svg";
+import Storefront from "../../../assets/images/icons_for_support_section/Storefront.svg";
+import Truck from "../../../assets/images/icons_for_support_section/Truck.svg";
 import { Box } from "@mui/material";
 
 export default function SupportSection() {
