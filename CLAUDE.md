@@ -5,6 +5,10 @@
 An e-commerce product catalog for **X-Market DXB** (laptop & mobile shop in Dubai). Built with React 19 + TypeScript + Vite. Currently a frontend-only prototype with static product data — no backend integration yet.
 
 - **Domain:** [techsale.online](https://techsale.online)
+- **Business model:** Single store (not a marketplace), B2B wholesale
+- **Target audience:** B2B wholesale buyers
+- **Key user action:** Request a quote (no online payment)
+- **No cart/checkout flow** — users contact the store for pricing
 
 ## Tech Stack
 
@@ -100,6 +104,7 @@ structures.ini (root)      # Planned folder structure reference (in Russian)
 - **Border:** `#e4e7e9`
 - **Font:** Roboto, sans-serif
 - **Breakpoints:** xs:0, sm:375, md:768, lg/xl:1440
+- **Main mobile size:** 375px (primary mobile target for responsive design)
 
 ## Product Data Shape
 

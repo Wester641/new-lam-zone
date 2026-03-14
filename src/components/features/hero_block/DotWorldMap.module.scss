@@ -1,0 +1,33 @@
+@use "../../../styles/variables" as *;
+
+.map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 900px;
+  height: auto;
+  opacity: 0.12;
+  pointer-events: none;
+
+  circle {
+    fill: rgba(255, 255, 255, 0.8);
+  }
+
+  @media (max-width: 768px) {
+    width: 140%;
+    opacity: 0.08;
+  }
+}
+
+.dubai {
+  fill: $black-friday-yellow-color !important;
+  opacity: 1;
+}
+
+.line {
+  stroke: rgba(255, 255, 255, 0.3);
+  stroke-width: 0.5;
+  stroke-dasharray: 4 3;
+}

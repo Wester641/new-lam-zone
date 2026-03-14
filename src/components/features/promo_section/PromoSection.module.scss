@@ -1,0 +1,104 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
+
+.promoSection {
+  padding: 40px 0;
+  //   background-color: #f8f9fa;
+
+  .container {
+    padding: 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 24px 0;
+  }
+}
+
+.promoCard {
+  background-color: #fff;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  padding: 32px 24px;
+  text-align: center;
+  height: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: $text-color;
+    margin: 16px 0 8px;
+
+    @media (max-width: 768px) {
+      margin: 0 0 4px;
+      font-size: 1rem;
+    }
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: $gray-600;
+    line-height: 1.6;
+    margin: 0 0 16px;
+
+    @media (max-width: 768px) {
+      margin: 0 0 8px;
+      font-size: 0.8125rem;
+      line-height: 1.4;
+    }
+  }
+}
+
+.textContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.iconWrapper {
+  @include flex-center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 0 auto;
+  flex-shrink: 0;
+
+  svg {
+    font-size: 1.8rem;
+    color: $primary-color;
+  }
+
+  @media (max-width: 768px) {
+    width: 48px;
+    height: 48px;
+    margin: 0;
+
+    svg {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.promoLink {
+  color: $primary-color;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
